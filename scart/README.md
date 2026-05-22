@@ -29,7 +29,7 @@ Alvo principal: mod RGB no KV-21FS140 (`../tv/mod_rgb/rgb_mod.md`).
 | Arquivo | Console | Conteúdo |
 |---------|---------|----------|
 | [../consoles/nes/mods.md](../consoles/nes/mods.md) | NES / Famicom | NESRGB, PPU-LITE, mods de áudio |
-| [../consoles/n64/rgb_mod.md](../consoles/n64/rgb_mod.md) | Nintendo 64 | THS7316, opções de mod RGB |
+| [../consoles/n64/mods.md](../consoles/n64/mods.md) | Nintendo 64 | THS7316, opções de mod RGB |
 
 ## Componentes comuns a todos os cabos
 
