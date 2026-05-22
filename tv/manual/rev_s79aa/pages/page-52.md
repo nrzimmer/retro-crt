@@ -1,0 +1,67 @@
+![page-52](img/page-52.png)
+
+                                                                                                                                                KV-21FS140
+
+
+
+            NOTE: The components identiﬁed by shading
+            and ! mark are critical for safety. Replace only
+            with part number speciﬁed.
+                                                                                                                                                    A
+               REF. NO.      PART NO.          DESCRIPTION        VALUES                REF. NO.     PART NO.      DESCRIPTION     VALUES
+
+               C913        1-164-315-11       CERAMIC CHIP      470pF      5%    50V    D064       8-719-036-94   DIODE          RD5.6SB-T1
+               C914        1-164-315-11       CERAMIC CHIP      470pF      5%    50V    D065       8-719-036-94   DIODE          RD5.6SB-T1
+               C915        1-164-315-11       CERAMIC CHIP      470pF      5%    50V    D066       8-719-083-20   DIODE          PG102R
+               C916        1-164-315-11       CERAMIC CHIP      470pF      5%    50V    D068       8-719-036-94   DIODE          RD5.6SB-T1
+               C917        1-164-315-11       CERAMIC CHIP      470pF      5%    50V    D071       8-719-404-50   DIODE          MA111-TX
+
+               C918        1-164-346-11       CERAMIC CHIP      1µF              16V    D072       8-719-404-50   DIODE          MA111-TX
+               C919        1-164-346-11       CERAMIC CHIP      1µF              16V    D074       8-719-404-50   DIODE          MA111-TX
+               C922        1-164-315-11       CERAMIC CHIP      470pF      5%    50V    D075       6-500-028-01   DIODE          MM3Z9V1ST1
+               C925        1-164-315-11       CERAMIC CHIP      470pF      5%    50V    D103       8-719-982-26   DIODE          MTZJ-33B
+               C955        1-126-947-11       ELECT             47µF       20%   35V    D105       8-719-404-50   DIODE          MA111-TX
+
+               C956        1-126-933-11       ELECT             100µF      20%   16V    D106       8-719-157-94   DIODE          RD3.3SB
+               C967        1-164-505-11       CERAMIC CHIP      2.2µF            16V    D108       8-719-036-94   DIODE          RD5.6SB-T1
+               C975        1-162-964-11       CERAMIC CHIP      0.001µF    10%   50V    D109       8-719-036-94   DIODE          RD5.6SB-T1
+               C979        1-162-964-11       CERAMIC CHIP      0.001µF    10%   50V    D112       8-719-036-94   DIODE          RD5.6SB-T1
+               C1019       1-125-891-11       CERAMIC CHIP      0.47µF     10%   10V    D113       8-719-036-94   DIODE          RD5.6SB-T1
+
+               C2602       1-102-114-00       CERAMIC           470pF      10%   50V    D200       8-719-062-51   DIODE          1PS226-115
+               C2631       1-102-228-00       CERAMIC           470pF      10%   500V   D201       8-719-404-50   DIODE          MA111-TX
+               C2636       1-126-972-11       ELECT             1000µF     20%   50V    D202       8-719-404-50   DIODE          MA111-TX
+               C2648       1-126-952-11       ELECT             1000µF     20%   35V    D203       8-719-404-50   DIODE          MA111-TX
+                                                                                        D204       8-719-404-50   DIODE          MA111-TX
+                           CONNECTOR
+                                                                                        D205       8-719-404-50   DIODE          MA111-TX
+        *       CN005      1-564-506-11       PLUG, CONNECTOR 3P                        D208       8-719-404-50   DIODE          MA111-TX
+        *       CN200      1-564-507-11       PLUG, CONNECTOR 4P                        D211       8-719-062-51   DIODE          1PS226-115
+        *       CN600      1-508-786-00       PIN, CONNECTOR (5MM PITCH) 2P             D212       8-719-404-50   DIODE          MA111-TX
+        *       CN601      1-691-134-11       PIN, CONNECTOR (PC BOARD) 2P              D213       8-719-404-50   DIODE          MA111-TX
+            ! * CN602      1-580-843-11       PIN, CONNECTOR (POWER)
+                                                                                        D214       8-719-404-50   DIODE          MA111-TX
+        *      CN904       1-508-743-00       PIN, CONNECTOR    5P                      D600       8-719-404-50   DIODE          MA111-TX
+               CT139       1-813-754-21       TRAP, CERAMIC                             D602       6-501-301-01   DIODE          1A5G
+                                                                                        D603       6-501-301-01   DIODE          1A5G
+                           DIODE                                                        D604       8-719-077-77   DIODE          D3SB60F3
+               D002        8-719-404-50       DIODE             MA111-TX
+               D003        8-719-404-50       DIODE             MA111-TX                D617       6-500-567-11   DIODE          10ERB20-TA2B5
+               D023        6-500-028-01       DIODE             MM3Z9V1ST1              D618       6-500-567-11   DIODE          10ERB20-TA2B5
+               D024        6-500-028-01       DIODE             MM3Z9V1ST1              D619       6-500-567-11   DIODE          10ERB20-TA2B5
+               D025        6-500-028-01       DIODE             MM3Z9V1ST1              D621       8-719-312-10   DIODE          RU4AM-T3
+                                                                                        D622       8-719-085-37   DIODE          11EQS10-TB5
+               D054        8-719-036-94       DIODE             RD5.6SB-T1
+               D055        8-719-036-94       DIODE             RD5.6SB-T1              D623       6-500-567-31   DIODE          10ERB20-TB3
+               D056        8-719-404-50       DIODE             MA111-TX                D624       8-719-510-73   DIODE          S3L20µF4
+               D057        8-719-404-50       DIODE             MA111-TX                D629       8-719-109-85   DIODE          RD5.1ESB2
+               D058        8-719-404-50       DIODE             MA111-TX                D633       8-719-923-86   DIODE          MTZJ-T-77-15
+                                                                                        D635       8-719-072-63   DIODE          PDZ3.6B-115
+               D059        8-719-404-50       DIODE             MA111-TX
+               D060        8-719-036-94       DIODE             RD5.6SB-T1              D637       8-719-072-70   DIODE          MA2ZD14001S0
+               D061        8-719-404-50       DIODE             MA111-TX                D638       8-719-404-50   DIODE          MA111-TX
+               D062        8-719-036-94       DIODE             RD5.6SB-T1              D639       6-501-311-01   DIODE          SB360-S
+               D063        8-719-404-50       DIODE             MA111-TX                D804       8-719-991-33   DIODE          1SS133T-77
+        KV-21FS140                                                                                                                                     52
+Downloaded from www.Manualslib.com manuals search engine
+

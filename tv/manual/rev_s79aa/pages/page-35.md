@@ -1,0 +1,66 @@
+![page-35](img/page-35.png)
+
+                                                                                                                                                         KV-21FS140
+
+
+                                                                         SECTION 4: DIAGRAMS
+
+        4-1. CIRCUIT BOARDS LOCATION
+
+                                                                                               The components identiﬁed by shading and ! symbol are critical for
+                                                                                               safety. Replace only with part number speciﬁed.
+
+                                                                                               The symbol        indicates a fast operating fuse and is displayed on
+                                                                                               the component side of the board. Replace only with fuse of the same
+                                                                                               rating as marked.
+
+                  C Board
+
+
+
+
+                                                               A Board
+
+
+        4-2. PRINTED WIRING BOARD AND                                               REFERENCE INFORMATION
+             SCHEMATIC DIAGRAM INFORMATION
+                                                                                    RESISTOR                                 CAPACITOR
+        All capacitors are in µF unless otherwise noted. pF : µµF 50WV or less      : RN   METAL FILM                        : TA   TANTALUM
+        are not indicated except for electrolytics and tantalums.                   : RC   SOLID                             : PS   STYROL
+                                                                                    : FPRD NONFLAMMABLE CARBON               : PP   POLYPROPYLENE
+        All electrolytics are in 50V unless otherwise speciﬁed.                                                              : PT   MYLAR
+                                                                                    : FUSE NONFLAMMABLE FUSIBLE
+        All resistors are in ohms. k=1000, M=1000k                                  : RW   NONFLAMMABLE WIREWOUND            : MPS METALIZED POLYESTER
+                                                                                    : RS   NONFLAMMABLE METAL OXIDE          : MPP METALIZED POLYPROPYLENE
+        Indication of resistance, which does not have one for rating electrical
+                                                                                    : RB   NONFLAMMABLE CEMENT               : ALB BIPOLAR
+        power, is as follows: Pitch : 5mm Rating electrical power :                                                          : ALT HIGH TEMPERATURE
+                                                                                    :      ADJUSTMENT RESISTOR
+        1
+            / 4 W in resistance, 1/10 W and 1/ 8 W in chip resistance.                                                       : ALR HIGH RIPPLE
+                   : nonﬂammable resistor.                                          COIL
+                                                                                    : LF-8L MICRO INDUCTOR
+                  : fusible resistor.
+              : internal component.
+                  : panel designation and adjustment for repair.
+              : earth ground
+              : earth-chassis
+        All variable and adjustable resistors have characteristic curve B, unless
+        otherwise noted.
+        Readings are taken with a color-bar signal input.
+        Readings are taken with a 10M digital multimeter.
+        Voltages are DC with respect to ground unless otherwise noted.
+        Voltage variations may be noted due to normal production tolerances.
+        All voltages are in V.
+        S : Measurement impossibillity.
+                 : B+line.
+                             : B-line.
+        (Actual measured value may be different).
+                 : signal path. (RF)
+        Circled numbers are waveform references.
+
+
+
+        KV-21FS140                                                                                                                                                35
+Downloaded from www.Manualslib.com manuals search engine
+

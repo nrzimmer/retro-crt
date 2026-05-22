@@ -1,0 +1,163 @@
+![page-36](img/page-36.png)
+
+                                                                                                                                                                                                                                                                                                                                                                         KV-21FS140
+
+
+     4-3. BLOCK DIAGRAMS AND SCHEMATICS
+          SIGNAL FLOW BLOCK DIAGRAM
+
+                                           T U101
+
+                                                  SCL
+                                                         SCL                                                             IC 001
+                                                                                                             S Y S T E M C ONT R OLLE R ,
+                                                                                                                                                                             A (                                 P OW E R S UP P LY ,
+                                                                                                                                                                                                                AUDIO, DE F LE C T ION,
+                                                                                                                                                                                                                   T UNE R , J AC K
+                                                                                                                                                                                                                                                )
+                                                         S DA                                            V IDE O & AUDIO P R OC E S S OR
+                                                  S DA
+                                                                                                        24     V IF IN 1         R OT S W     113
+                                               IF OUT                                      S WF 100
+                                                                                                        25     V IF IN 2
+                                                                                                                               R OT C T R L   112
+                                                                                                                                                                                                 IC 200
+                                                                                                        29     S IF IN 1                                                                    AUDIO AMP LIF IE R
+                                                                                           S WF 101                                                                                                                                                                                                                             J 200
+                                                                                                        30     S IF IN 2            MUT E     106                                       8   MUT E               P W G ND      9
+
+                                                                                                        62     S C AR T HP R          LS R    61                                        2   IN R /NC
+                                                                                                                                                                                                                  OUT L       7
+                                                                                                        63     S C AR T HP R          LS L    60                                        5   IN L
+                                                                                                                                                                                                                                                                                                                                              HE ADP HONE S
+                                                                                                                                                                                                            OUT R /NC        12
+                                                                                                        37     OUT R                                      S WIT C H
+                                           C N901                                                                        MO MUT E AUDIO 104
+                                                                                                                                                            Q016                                                    VCC      10
+                                                                                                                                                                            IC 003
+                                                                                                                                                                             NV M                           IC 002
+                                                                               MUT E                                                                                                                                                                                                                                             C N200
+                                                  P 16   R OUT                                                                                                                                          IR R E C E IV E R
+                                                                              S WIT C H                                             S DA1 99                          7                                                                                                                                                  SPL    1
+                                                                                Q902
+                                                                                                                                    SCR 0     108                     6                 8           I       VCC         OUT O                                                                                           SPR     4            T O S P E AK E R S
+
+                                                                               MUT E                                                S DA0 109                         5
+                                                  P 15   L OUT
+                                                                              S WIT C H
+                                                                                Q901                                               S IR S C   97                                                                                                                                                                                 C N904
+                                                                                                                                                                                                                                                                                                                       B INT    2
+                                                                                                        36     OUT L
+                                                  P7     R IN 3                                                                                                                                                                                                                                                        B DAT    3
+                                                                                                        54     IN R 3
+                                                  P9     L IN 3                                                                                                                                                                                                                                                        B C LK   4
+                                  S C AR T                                                              53     IN L3                B INT     102
+                                                  P3     R IN 1
+                                                                                                        57     IN R 1                                                                                                                                                                                                            C N005
+                                                  P5     L IN 1                                                                                                                                                                                                                                                         KEY     3
+                                                                                                        56     IN L1                  KEY     119                                                                                                                                                                                          T O C ONT R OL P ANE L
+                                                  P 11   U-OUT
+                                                                                                        80 B -Y /B IN                E WD     21                                                                                                                                                                                 C N004
+                                                  P 10   Y -OUT                                                                                                                                                                                                                                                        B OUT    2
+                                                                                                        79     Y /G IN             B OUT      87
+                                                  P 12   V OUT                                                                                                                                                                                                                                                         G OUT    3           T O C B OAR D
+                                                                                                        78     R -Y /R IN          G OUT      86
+                                                                                                                                                                                                                                                                                                                                                C N701
+                                                  P 14   V OUT MON                                                                                                                                                                                                                                                     R OUT    4
+                                                                                                        48     MON OUT             R OUT      85
+                                                                                                                                                                                                                     IC 804
+                                                                                                                                                                                                        V E R T IC AL DE F LE C T ION
+                                                  P1     V IN 1                                                                       V D-    22                                                                  B OOS T E R                                                                                                    DY 800
+                                                                                                        58     C V B S 1/-/1
+                                                                                                                                                                                                                                                                                                                                6
+                                                                                                                                                                                                                             OUT P UT     5
+                                                                                                        51 C V B S 2/Y 2                                            IC 801                                  1    DR V -IN
+                                               J 903
+                                                                                                                                                                C OMP AR AT O R                                                    VS S   4                                                                                     5
+                                                         R2
+                                                                                                        50     INR 2                                                                                                                                                                                                                                     H.DY       DY
+                                                                                                                                                                 1                  6                                              VCC    2                                                                D821
+                                  F R O NT               L2                                                                                                                                                                                            IC 802                                                                   4                        H.DY
+                                                                                                        49     INL 2
+                                S OC K E T S                                                                                                                                        5                                                                P IN AMP                                  S WIT C H
+                                                         V2                                                                                                                                                                                                                               8V     S 800
+                                                                                            R E LAY                                                                                                         Q806                                                                                                                3
+                                                                                           S WIT C H    115    DG C R E LAY        H OUT      67                 3                  7                                              Q808         5               1
+                                                                                                                                                                                                            Q807
+                                                                                             Q601                                                                                                                                                                                                          D819                                          V .DY
+                                                                                                                                                                                                                                                                                                                                2
+                                                                                                                                      V D+    23                                                                                                3               7                                                                                        V .DY
+                                                                                                                                                                                                            T 800
+                                           C N600
+                                                                                                                                                                       S WIT C H                        1           4                                                                                                           1
+                                                 2       DG C T                                                                                                          Q803
+
+                                                   1     DG C T                R E LAY                                                                                                                                                                                                                                          C N801
+                                                                               R Y 600                                                                  T 602                                           3           6
+                                                                                                                                                                                                                                                                                                                        200V    1
+                                                                                                                                                        SRT
+                                                                                                                                                                                                                                                                                                                                            T O C B OAR D
+                                           C N601                                                                                                                         AUDIO 1                                                                                                                                         H1    4               C N703
+                                                                                                                                                    1             18
+                                                 2       DG C
+                                                                                                                 MAIN                                                                                                                                                                            T 801
+                                                   1     DG C
+                                                                                                             R E C T IF IE R
+                                                                                                                 D604                               3             17                                                                                                                  1                           HV                    T O P IC T UR E T UB E
+                                                              F 600   S 600                                                                                                                                            IC 603
+                                          C N602               5A                                                                                                                                                18V R E G ULAT OR
+                                                              250V
+                                        AC IN 1
+                                                                                 LINE         LINE                                                  5             16                                                1              2                        1.8V AUDIO                4
+                                        AC IN      2                           F ILT E R    F ILT E R
+                                                                                 T 600        T 603                                                                                           IC 606
+                                                                                                                                                    7             15
+                                                                                                                                                                                            3.3V R E G                                                      +3.3V
+                                                                                                                                                                                                                                                                           +B
+                                                                                                                                                                                                                                                                                      2
+                                                                                                                                                                                                                         IC 602            IC 604
+                                                                                                                                                                  14
+                                                                                                                                                                                                                        9V R E G          5V R E G          +5V
+                                                                                 LINE                                                               8
+                                                                               F ILT E R                                                                                                                                                                                              6
+                                                                                T 604                                                                             13                                                                                        +9V
+
+                                                                                                                                                                                              IC 607
+                                                                                                                                                                                             2V R E G                                                       +1.8V MAIN IC 601
+                                                                                                                                                                                                                                                                                      5
+                                                                                                                                                                  12                                                                            P HY 600              S WIT C HING
+                                                                                                                                                                                                        +B                                    IS OLAT O R            R E G ULAT O R
+                                                                                                                                                                                                                         IC 605
+                                                                                                                                                                  11                                                    E R R OR                                       2
+                                                                                                                                                                                                                          AMP
+                                                                                                                                                                                                                                                                                                                                            T O C B OAR D
+                                                                                                                                                                                                                                                                       5                                          FV                 FV
+                                                                                                                                                                                                                                                                                                                                                 J 751
+                                                                                                                                                                  10
+                                                                                                                                                                                                                                                                                 1
+                                                                                                                                                                                                                                                                                                                  SV
+                                                                                                                                                                                                                                                                       4         3
+                                                                                                                                                                                                                                                                                                                  13
+
+
+                                                                                                                                                                                                                                                                                                                  11
+
+
+                                                                                                                                                                                                                                                                                                                  9
+
+
+                                                                                                                                                                                                                                                                                                                  8
+
+
+                                                                                                                                                                                                                                                                                                                  7
+
+
+
+
+     KV-21FS140                                                                                                                                                                                                                                                                                                                                                                36
+
+
+
+
+Downloaded from www.Manualslib.com manuals search engine
+

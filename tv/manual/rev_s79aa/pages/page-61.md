@@ -1,0 +1,70 @@
+![page-61](img/page-61.png)
+
+                                                                                                                                                     KV-21FS140
+
+
+
+          NOTE: The components identiﬁed by shading
+          and ! mark are critical for safety. Replace only
+                                                                                                                                                         A
+          with part number speciﬁed.
+
+
+             REF. NO.      PART NO.          DESCRIPTION      VALUES                       REF. NO.     PART NO.      DESCRIPTION           VALUES
+
+             C854        1-126-948-11       ELECT            100µF     20%   35V           C2648      1-126-952-11   ELECT             1000µF    20%   35V
+             C855        1-107-894-11       ELECT            220µF     20%   35V
+             C857        1-104-666-11       ELECT            220µF     20%   25V                      CONNECTOR
+             C858        1-137-959-91       MYLAR            0.47µF    5%    100V
+             C860        1-162-318-11       CERAMIC          0.001µF   10%   500V   *       CN005     1-564-506-11   PLUG, CONNECTOR 3P
+                                                                                    *       CN200     1-564-507-11   PLUG, CONNECTOR 4P
+             C861        1-104-666-11       ELECT            220µF     20%   25V    *       CN600     1-508-786-00   PIN, CONNECTOR (5MM PITCH) 2P
+             C862        1-162-318-11       CERAMIC          0.001µF   10%   500V   *       CN601     1-691-134-11   PIN, CONNECTOR (PC BOARD) 2P
+                                                                                        ! * CN602     1-580-843-11   PIN, CONNECTOR (POWER)
+             C863        1-165-176-11       CERAMIC CHIP     0.047µF   10%   16V
+             C867        1-165-441-81       ELECT            33µF      20%   160V
+             C868        1-102-228-00       CERAMIC          470pF     10%   500V   *      CN904      1-508-743-00   PIN, CONNECTOR    5P
+                                                                                           CT139      1-813-754-21   TRAP, CERAMIC
+             C869        1-107-654-11       ELECT            33µF      20%   250V
+             C870        1-106-387-00       MYLAR            0.068µF   10%   200V                     DIODE
+             C876        1-162-964-11       CERAMIC CHIP     0.001µF   10%   50V           D002       8-719-404-50   DIODE             MA111-TX
+             C877        1-162-970-11       CERAMIC CHIP     0.01µF    10%   25V           D003       8-719-404-50   DIODE             MA111-TX
+             C878        1-162-970-11       CERAMIC CHIP     0.01µF    10%   25V           D023       6-500-028-01   DIODE             MM3Z9V1ST1
+                                                                                           D024       6-500-028-01   DIODE             MM3Z9V1ST1
+             C900        1-164-505-11       CERAMIC CHIP     2.2µF           16V           D025       6-500-028-01   DIODE             MM3Z9V1ST1
+             C901        1-164-505-11       CERAMIC CHIP     2.2µF           16V
+             C902        1-126-957-11       ELECT            0.22µF    20%   50V           D054       8-719-036-94   DIODE             RD5.6SB-T1
+             C903        1-126-935-11       ELECT            470µF     20%   16V           D055       8-719-036-94   DIODE             RD5.6SB-T1
+             C906        1-164-346-11       CERAMIC CHIP     1µF             16V           D056       8-719-404-50   DIODE             MA111-TX
+                                                                                           D057       8-719-404-50   DIODE             MA111-TX
+             C907        1-164-346-11       CERAMIC CHIP     1µF             16V           D058       8-719-404-50   DIODE             MA111-TX
+             C908        1-164-346-11       CERAMIC CHIP     1µF             16V
+             C909        1-164-346-11       CERAMIC CHIP     1µF             16V           D059       8-719-404-50   DIODE             MA111-TX
+             C910        1-164-315-11       CERAMIC CHIP     470pF     5%    50V           D060       8-719-036-94   DIODE             RD5.6SB-T1
+             C911        1-164-315-11       CERAMIC CHIP     470pF     5%    50V           D061       8-719-404-50   DIODE             MA111-TX
+                                                                                           D062       8-719-036-94   DIODE             RD5.6SB-T1
+             C912        1-164-315-11       CERAMIC CHIP     470pF     5%    50V           D063       8-719-404-50   DIODE             MA111-TX
+             C913        1-164-315-11       CERAMIC CHIP     470pF     5%    50V
+             C914        1-164-315-11       CERAMIC CHIP     470pF     5%    50V           D064       8-719-036-94   DIODE             RD5.6SB-T1
+             C915        1-164-315-11       CERAMIC CHIP     470pF     5%    50V           D065       8-719-036-94   DIODE             RD5.6SB-T1
+             C916        1-164-315-11       CERAMIC CHIP     470pF     5%    50V           D066       8-719-083-20   DIODE             PG102R
+                                                                                           D068       8-719-036-94   DIODE             RD5.6SB-T1
+             C917        1-164-315-11       CERAMIC CHIP     470pF     5%    50V           D071       8-719-404-50   DIODE             MA111-TX
+             C918        1-164-346-11       CERAMIC CHIP     1µF             16V
+             C919        1-164-346-11       CERAMIC CHIP     1µF             16V           D072       8-719-404-50   DIODE             MA111-TX
+             C922        1-164-315-11       CERAMIC CHIP     470pF     5%    50V           D074       8-719-404-50   DIODE             MA111-TX
+             C925        1-164-315-11       CERAMIC CHIP     470pF     5%    50V           D075       6-500-028-01   DIODE             MM3Z9V1ST1
+                                                                                           D103       8-719-982-26   DIODE             MTZJ-33B
+             C955        1-126-947-11       ELECT            47µF      20%   35V           D105       8-719-404-50   DIODE             MA111-TX
+             C956        1-126-933-11       ELECT            100µF     20%   16V
+             C967        1-164-505-11       CERAMIC CHIP     2.2µF           16V           D106       8-719-157-94   DIODE             RD3.3SB
+             C975        1-162-964-11       CERAMIC CHIP     0.001µF   10%   50V           D108       8-719-036-94   DIODE             RD5.6SB-T1
+             C979        1-162-964-11       CERAMIC CHIP     0.001µF   10%   50V           D109       8-719-036-94   DIODE             RD5.6SB-T1
+                                                                                           D112       8-719-036-94   DIODE             RD5.6SB-T1
+             C1019       1-125-891-11       CERAMIC CHIP     0.47µF    10%   10V           D113       8-719-036-94   DIODE             RD5.6SB-T1
+             C2602       1-102-114-00       CERAMIC          470pF     10%   50V
+             C2631       1-102-228-00       CERAMIC          470pF     10%   500V          D200       8-719-062-51   DIODE             1PS226-115
+             C2636       1-126-972-11       ELECT            1000µF    20%   50V           D201       8-719-404-50   DIODE             MA111-TX
+        KV-21FS140                                                                                                                                           61
+Downloaded from www.Manualslib.com manuals search engine
+

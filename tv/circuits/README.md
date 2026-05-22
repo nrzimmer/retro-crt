@@ -9,13 +9,13 @@ Baseado em ambos os manuais — diferenças entre rev_brazil e rev_s79aa são an
 
 | Arquivo | Bloco | Conteúdo |
 |---------|-------|----------|
-| [block001_processor.md](block001_processor.md) | Block 001 | IC001 One-Chip — System/Video/Audio Processor |
-| [block002_audio.md](block002_audio.md) | Block 002 | IC200 Audio Amp (AN5276T / AN17804A) |
-| [block003_psu.md](block003_psu.md) | Block 003 | SMPS — transformador T600, reguladores |
-| [block004_deflection.md](block004_deflection.md) | Block 004 | Deflexão H/V — Q805, IC804, FBT T801, EW |
-| [block005_if_tuner.md](block005_if_tuner.md) | Block 005 | IF — tuner, VIF SAW, SIF, AGC |
-| [block006_av_inputs.md](block006_av_inputs.md) | Block 006 | Entradas AV, SCART, RGB |
-| [cboard_rgb_amp.md](cboard_rgb_amp.md) | C Board | IC751 TDA6108AJF — RGB amp para cátodos do CRT |
+| [block_001_processor.md](block_001_processor.md) | Block 001 | IC001 One-Chip — System/Video/Audio Processor |
+| [block_002_audio.md](block_002_audio.md) | Block 002 | IC200 Audio Amp (AN5276T / AN17804A) |
+| [block_003_psu.md](block_003_psu.md) | Block 003 | SMPS — transformador T600, reguladores |
+| [block_004_deflection.md](block_004_deflection.md) | Block 004 | Deflexão H/V — Q805, IC804, FBT T801, EW |
+| [block_005_if_tuner.md](block_005_if_tuner.md) | Block 005 | IF — tuner, VIF SAW, SIF, AGC |
+| [block_006_av_inputs.md](block_006_av_inputs.md) | Block 006 | Entradas AV, SCART, RGB |
+| [c_board_rgb_amp.md](c_board_rgb_amp.md) | C Board | IC751 TDA6108AJF — RGB amp para cátodos do CRT |
 
 ### Service Mode e Diagnóstico
 
@@ -30,4 +30,4 @@ Baseado em ambos os manuais — diferenças entre rev_brazil e rev_s79aa são an
 
 | Arquivo | Conteúdo |
 |---------|----------|
-| [SCHEMATIC_ANALYSIS.md](SCHEMATIC_ANALYSIS.md) | Análise completa de todos os blocos do esquemático |
+| [schematic_analysis.md](schematic_analysis.md) | Análise completa de todos os blocos do esquemático |

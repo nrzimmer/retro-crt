@@ -1,0 +1,94 @@
+![page-64](img/page-64.png)
+
+                                                                                                                                   KV-21FS140
+
+
+
+          NOTE: The components identiﬁed by shading
+          and ! mark are critical for safety. Replace only
+                                                                                                                                       A
+          with part number speciﬁed.
+
+
+              REF. NO.     PART NO.          DESCRIPTION      VALUES         REF. NO.     PART NO.       DESCRIPTION     VALUES
+
+              L805       1-408-947-00       INDUCTOR         2.2MH                      RESISTOR
+              L902       1-414-187-11       INDUCTOR         47µH
+                                                                             R001       1-216-829-11   METAL CHIP      4.7K   5%     1/10W
+              L2601      1-412-525-31       INDUCTOR         10µH
+                                                                             R002       1-216-809-11   METAL CHIP      100    5%     1/10W
+                                                                             R003       1-216-829-11   METAL CHIP      4.7K   5%     1/10W
+                         PHOTO COUPLER
+                                                                             R004       1-216-809-11   METAL CHIP      100    5%     1/10W
+          !   PH600      6-600-187-01       PHOTO COUPLER    PC123Y22JOOF    R010       1-216-833-11   METAL CHIP      10K    5%     1/10W
+
+                         IC LINK                                             R011       1-216-817-11   METAL CHIP      470    5%     1/10W
+                                                                             R012       1-216-825-11   METAL CHIP      2.2K   5%     1/10W
+          !   PS602      1-533-597-41       IC LINK          5A        90V   R014       1-216-809-11   METAL CHIP      100    5%     1/10W
+          !   PS603      1-533-597-41       IC LINK          5A        90V   R015       1-216-823-11   METAL CHIP      1.5K   5%     1/10W
+              PS604      1-533-597-41       IC LINK          5A        90V   R018       1-216-809-11   METAL CHIP      100    5%     1/10W
+          !   PS605      1-533-597-41       IC LINK          5A        90V
+          !   PS2601     1-533-597-41       IC LINK          5A        90V   R020       1-216-809-11   METAL CHIP      100    5%     1/10W
+                                                                             R021       1-414-234-22   FERRITE         0µH
+                         TRANSISTOR                                          R024       1-216-809-11   METAL CHIP      100    5%     1/10W
+                                                                             R025       1-216-809-11   METAL CHIP      100    5%     1/10W
+              Q001       8-729-421-22       TRANSISTOR       UN2211
+                                                                             R026       1-216-809-11   METAL CHIP      100    5%     1/10W
+              Q006       8-729-424-67       TRANSISTOR       UN2216
+              Q007       8-729-424-67       TRANSISTOR       UN2216
+                                                                             R029       1-216-809-11   METAL CHIP      100    5%     1/10W
+              Q008       8-729-120-28       TRANSISTOR       2SC1623-L5L6
+                                                                             R030       1-216-809-11   METAL CHIP      100    5%     1/10W
+              Q010       8-729-600-22       TRANSISTOR       2SA1235-F
+                                                                             R038       1-216-809-11   METAL CHIP      100    5%     1/10W
+                                                                             R039       1-216-809-11   METAL CHIP      100    5%     1/10W
+              Q016       8-729-421-22       TRANSISTOR       UN2211
+                                                                             R041       1-216-809-11   METAL CHIP      100    5%     1/10W
+              Q100       8-729-120-28       TRANSISTOR       2SC1623-L5L6
+              Q102       8-729-022-54       TRANSISTOR       2SC3779C,D-AA
+                                                                             R042       1-216-825-11   METAL CHIP      2.2K   5%     1/10W
+              Q200       8-729-421-22       TRANSISTOR       UN2211
+                                                                             R044       1-216-834-11   METAL CHIP      12K    5%     1/10W
+              Q201       8-729-600-22       TRANSISTOR       2SA1235-F
+                                                                             R045       1-216-809-11   METAL CHIP      100    5%     1/10W
+                                                                             R046       1-216-809-11   METAL CHIP      100    5%     1/10W
+              Q202       8-729-600-22       TRANSISTOR       2SA1235-F
+                                                                             R048       1-216-809-11   METAL CHIP      100    5%     1/10W
+              Q206       8-729-421-22       TRANSISTOR       UN2211
+              Q601       8-729-120-28       TRANSISTOR       2SC1623-L5L6
+                                                                             R051       1-218-885-11   METAL CHIP      39K    0.50% 1/10W
+              Q605       6-550-572-01       TRANSISTOR       FN155
+                                                                             R056       1-216-809-11   METAL CHIP      100    5%    1/10W
+              Q608       8-729-120-28       TRANSISTOR       2SC1623-L5L6
+                                                                             R058       1-216-809-11   METAL CHIP      100    5%    1/10W
+                                                                             R059       1-216-821-11   METAL CHIP      1K     5%    1/10W
+              Q609       8-729-120-28       TRANSISTOR       2SC1623-L5L6
+                                                                             R060       1-216-809-11   METAL CHIP      100    5%    1/10W
+              Q803       8-729-140-50       TRANSISTOR       2SC3209LK
+              Q804       6-550-362-01       TRANSISTOR       KTA1279
+                                                                             R061       1-216-819-11   METAL CHIP      680    5%     1/10W
+              Q805       6-550-410-01       TRANSISTOR       2SC5885
+                                                                             R087       1-216-813-11   METAL CHIP      220    5%     1/10W
+              Q806       8-729-120-28       TRANSISTOR       2SC1623-L5L6
+                                                                             R088       1-216-816-11   METAL CHIP      390    5%     1/10W
+                                                                             R096       1-216-813-11   METAL CHIP      220    5%     1/10W
+              Q807       8-729-600-22       TRANSISTOR       2SA1235-F
+                                                                             R097       1-216-813-11   METAL CHIP      220    5%     1/10W
+              Q808       8-729-053-33       TRANSISTOR       IRF614-037
+              Q814       8-729-120-28       TRANSISTOR       2SC1623-L5L6
+                                                                             R098       1-216-813-11   METAL CHIP      220    5%    1/10W
+              Q900       8-729-600-22       TRANSISTOR       2SA1235-F
+                                                                             R099       1-216-813-11   METAL CHIP      220    5%    1/10W
+              Q901       8-729-424-67       TRANSISTOR       UN2216
+                                                                             R100       1-216-821-11   METAL CHIP      1K     5%    1/10W
+                                                                             R103       1-211-981-11   METAL CHIP      33     0.50% 1/10W
+              Q902       8-729-424-67       TRANSISTOR       UN2216
+                                                                             R106       1-216-832-11   METAL CHIP      8.2K   5%    1/10W
+              Q8009      6-550-362-01       TRANSISTOR       KTA1279
+              Q8010      8-729-140-50       TRANSISTOR       2SC3209LK
+                                                                             R107       1-216-826-11   METAL CHIP      2.7K   5%     1/10W
+                                                                             R108       1-216-820-11   METAL CHIP      820    5%     1/10W
+
+        KV-21FS140                                                                                                                        64
+Downloaded from www.Manualslib.com manuals search engine
+

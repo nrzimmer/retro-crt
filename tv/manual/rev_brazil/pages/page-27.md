@@ -1,0 +1,241 @@
+![page-27](img/page-27.png)
+
+KV-21FS140
+RM-YA005
+
+No. OPB3
+Item
+
+Reserved
+
+NICAM
+ST
+
+NICAM
+BI
+
+A2 ST
+
+Thai
+Bilingual
+
+US ST
+
+Korean
+ST
+
+MONO
+
+DEC
+
+KV-21FS140
+(Brazil)
+
+0
+
+0
+
+0
+
+0
+
+0
+
+1
+
+0
+
+0
+
+4
+
+KV-21FS140
+(SV-13105(E))
+
+0
+
+0
+
+0
+
+0
+
+0
+
+1
+
+0
+
+0
+
+4
+
+KV-21FS140
+
+0
+
+0
+
+0
+
+0
+
+0
+
+1
+
+0
+
+0
+
+4
+
+Reserved
+NICAM ST
+NICAM BI
+A2 ST/BI
+Thai Bilingual
+US ST
+Korean ST
+MONO
+
+Not used
+(NICAM Stereo)
+(NICAM Bilingual)
+(A2 [West German]
+Stereo/Bilingual)
+(A2 [Thai] Bilingual)
+or Force SAP if US ST is active
+(US Stereo)
+(Korean Stereo)
+(Monaural Model)
+
+0 = disabled, 1 = enabled
+0 = disabled, 1 = enabled
+0 = disabled, 1 = enabled
+0 = disabled, 1 = enabled
+0 = disabled, 1 = enabled
+0 = disabled, 1 = enabled
+0 = Stereo (SSD) Model
+1 = Monaural Model
+
+No. OPB4
+Item
+
+Sound
+Special
+
+1spk
+Models
+
+VM
+
+WSS-RF
+
+Surround
+
+Top
+
+Text
+
+DEC
+
+KV-21FS140
+(Brazil)
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+KV-21FS140
+(SV-13105(E))
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+KV-21FS140
+(SV-13106(E))
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+Sound Special
+1 spk Models
+
+Sound Special Feature
+1 Speaker Models
+
+VM
+WSS-RF
+Surround
+
+(Velocity Modulation)
+WSS detection in RF mode
+(Surround Selection)
+
+TOP
+TEXT
+
+(Forced TOP)
+(Teletext Model)
+
+– 26 –
+
+0 = disabled
+1 = enabled
+0 = 2 or 3 Speaker Models,
+1 = 1 speaker Models
+0 = disabled, 1 = enabled
+0 = disabled, 1 = enabled
+00 = Off/Simulated/Surround
+01 = Off/Simulated/SRS (3D) Surround
+10 = Off/Simulated/WOW/TruSurround
+11 = No Surround
+0 = Auto Mode (TOP/FLOF), 1 = Forced TOP
+0 = Non-Teletext Model, 1 = Teletext Model
+
+

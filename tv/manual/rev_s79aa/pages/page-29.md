@@ -1,0 +1,42 @@
+![page-29](img/page-29.png)
+
+                                                                                                                                                                                                             KV-21FS140
+     TVJ        Functionality            Init.          Range                                  Function                                   Table & Note      Device Name    Common           Initial Value (Detailed)
+   Category     No.       Name           Dec            Dec                                                                                                                                 Others            YUV
+  OPUS          000       SOFF           000             001    Stay off(0:follow last memory with AC on, 1:standby with AC on)                                              01
+
+                001       SPCH           001             7F     Channel Number after Shipping Condition                                                                       *
+
+                002       SPCA           001             001    Cable Selection after Shipping Condition (1 = Cable On)                                                      01
+                003       CCBR           0F              1F     CC Brightnes (only for US)                                                                                   20
+                004       CCHP           008             0F     CC h position (only for US)                                                                                  13
+                005       OUV            0 00            001    Offset Control on UV input Signals (only for US)                          Others/YUV                                           00              00
+
+                00 6      CFA2           000             001    Forced Comb Filter On (only for US)                                           none                           00
+
+                00 7      HSYC           000             0 07   H Sync Selection for Tuning (SL, LOCK or SID)                                                                01
+                008        CLK           7D              FF     US clock offset (1 step : 8ms / 15 min) (only for US)                                                        122
+                009       CLKS           7D              FF     US clock offset (1 step : 8ms / 15 min) (only for US)                                                        138
+
+ (For NTSC model only)
+
+
+
+
+     TVJ      Functionality      Init.        Range                                 Function                                   Table & Note          Device Name    Common               Initial Value (Detailed)
+   Category   No.      Name      Dec             Dec                                                                                                                               Others         NTSC        SECAM
+  OPVP        000      BP B S    000             001      Bypass of sound bandpass filter at stereo mode (BPBS)                                      TV-Processor     00
+              001      BWYC      000             001      Bandwidth at YC mode for 3.58 MHz color system (BWYC)                                                       00
+              002      OSB       000             00 1     Width of internal burstkey pulse of chroma demodulator (OSB)                                                00
+              003      BKC       00 0            001      Burst Key Position                                             NTSC/SECAM/others (PAL)                                    00              00              00
+
+
+
+
+       KV-21FS140                                                                                                                                                                                                        29
+
+
+
+
+Downloaded from www.Manualslib.com manuals search engine
+

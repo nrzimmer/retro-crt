@@ -1,0 +1,69 @@
+![page-56](img/page-56.png)
+
+                                                                                                                                               KV-21FS140
+
+
+
+          NOTE: The components identiﬁed by shading
+          and ! mark are critical for safety. Replace only
+                                                                                                                                                   A
+          with part number speciﬁed.
+
+
+             REF. NO.      PART NO.          DESCRIPTION      VALUES                     REF. NO.     PART NO.       DESCRIPTION     VALUES
+
+             R234        1-249-401-11       CARBON           47        5%    1/4W        R395       1-216-845-11   METAL CHIP      100K   5%     1/10W
+             R235        1-249-401-11       CARBON           47        5%    1/4W        R398       1-216-797-11   METAL CHIP      10     5%     1/10W
+             R236        1-216-833-11       METAL CHIP       10K       5%    1/10W       R400       1-260-288-11   CARBON          0.47   5%     1/2W
+             R237        1-216-809-11       METAL CHIP       100       5%    1/10W       R401       1-260-288-11   CARBON          0.47   5%     1/2W
+             R238        1-216-809-11       METAL CHIP       100       5%    1/10W       R405       1-260-288-11   CARBON          0.47   5%     1/2W
+
+             R241        1-216-825-11       METAL CHIP       2.2K      5%    1/10W       R406       1-260-127-11   CARBON          220K   5%     1/2W
+             R242        1-216-825-11       METAL CHIP       2.2K      5%    1/10W       R411       1-214-909-00   METAL           68K    1%     1/2W
+             R300        1-216-809-11       METAL CHIP       100       5%    1/10W       R412       1-215-453-00   METAL           22K    1%     1/4W
+             R301        1-216-859-11       METAL CHIP       1.5M      5%    1/10W       R413       1-215-449-00   METAL           15K    1%     1/4W
+             R303        1-216-861-11       METAL CHIP       2.2M      5%    1/10W       R414       1-260-336-11   CARBON          4.7K   5%     1/2W
+
+             R304        1-216-845-11       METAL CHIP       100K      5%    1/10W       R416       1-260-107-11   CARBON          4.7K   5%     1/2W
+             R307        1-216-864-11       SHORT CHIP                                   R420       1-216-829-11   METAL CHIP      4.7K   5%     1/10W
+             R309        1-216-857-11       METAL CHIP       1M        5%    1/10W       R421       1-216-833-11   METAL CHIP      10K    5%     1/10W
+             R310        1-216-821-11       METAL CHIP       1K        5%    1/10W       R423       1-216-864-11   SHORT CHIP
+             R311        1-216-841-11       METAL CHIP       47K       5%    1/10W       R424       1-218-899-11   METAL CHIP      150K   0.50% 1/16W
+
+             R312        1-216-857-11       METAL CHIP       1M        5%    1/10W       R602       1-216-829-11   METAL CHIP      4.7K   5%     1/10W
+             R313        1-216-847-11       METAL CHIP       150K      5%    1/10W       R609       1-216-833-11   METAL CHIP      10K    5%     1/10W
+             R314        1-218-867-11       METAL CHIP       6.8K      0.50% 1/10W       R616       1-205-998-11   METAL           1      5%     10W
+             R315        1-218-867-11       METAL CHIP       6.8K      0.50% 1/10W       R619       1-216-361-00   METAL OXIDE     0.22   5%     2W
+             R317        1-216-827-11       METAL CHIP       3.3K      5%    1/10W       R620       1-216-361-00   METAL OXIDE     0.22   5%     2W
+
+             R320        1-218-863-11       METAL CHIP       4.7K      0.50% 1/10W       R621       1-249-409-11   CARBON          220    5%     1/4W
+             R322        1-218-863-11       METAL CHIP       4.7K      0.50% 1/10W       R624       1-215-429-00   METAL           2.2K   1%     1/4W
+             R323        1-216-809-11       METAL CHIP       100       5%    1/10W       R625       1-216-864-11   SHORT CHIP
+             R324        1-216-864-11       SHORT CHIP                                   R627       1-249-385-11   CARBON          2.2    5%     1/4W
+             R331        1-216-809-11       METAL CHIP       100       5%    1/10W       R631       1-249-425-11   CARBON          4.7K   5%     1/4W
+
+             R336        1-216-829-11       METAL CHIP       4.7K      5%    1/10W       R634       1-216-829-11   METAL CHIP      4.7K   5%    1/10W
+             R337        1-216-817-11       METAL CHIP       470       5%    1/10W       R635       1-216-833-11   METAL CHIP      10K    5%    1/10W
+             R338        1-216-825-11       METAL CHIP       2.2K      5%    1/10W       R636       1-249-421-11   CARBON          2.2K   5%    1/4W
+             R339        1-216-809-11       METAL CHIP       100       5%    1/10W       R638       1-240-262-11   METAL           0.68   5%    10W
+             R340        1-216-833-11       METAL CHIP       10K       5%    1/10W       R645       1-218-899-11   METAL CHIP      150K   0.50% 1/16W
+
+             R341        1-216-809-11       METAL CHIP       100       5%    1/10W       R646       1-218-851-11   METAL CHIP      1.5K   0.50% 1/10W
+             R355        1-216-837-11       METAL CHIP       22K       5%    1/10W       R647       1-216-821-11   METAL CHIP      1K     5%    1/10W
+             R356        1-216-864-11       SHORT CHIP                               !   R650       1-247-289-00   METAL           8.2M   5%    1W
+             R360        1-216-864-11       SHORT CHIP                                   R651       1-243-595-71   METAL OXIDE     39K    5%    2W
+             R363        1-216-864-11       SHORT CHIP                                   R655       1-216-809-11   METAL CHIP      100    5%    1/10W
+
+             R364        1-216-821-11       METAL CHIP       1K        5%    1/10W       R656       1-249-381-11   CARBON          1      5%     1/4W
+             R377        1-216-823-11       METAL CHIP       1.5K      5%    1/10W       R667       1-216-821-11   METAL CHIP      1K     5%     1/10W
+             R379        1-216-843-11       METAL CHIP       68K       5%    1/10W       R668       1-216-839-11   METAL CHIP      33K    5%     1/10W
+             R380        1-216-809-11       METAL CHIP       100       5%    1/10W       R820       1-216-825-11   METAL CHIP      2.2K   5%     1/10W
+             R384        1-216-809-11       METAL CHIP       100       5%    1/10W       R821       1-216-837-11   METAL CHIP      22K    5%     1/10W
+
+             R385        1-216-809-11       METAL CHIP       100       5%    1/10W       R822       1-249-417-11   CARBON          1K     5%     1/4W
+             R386        1-216-809-11       METAL CHIP       100       5%    1/10W       R823       1-245-468-21   METAL           180K   1%     1/4W
+             R393        1-216-809-11       METAL CHIP       100       5%    1/10W       R824       1-216-839-11   METAL CHIP      33K    5%     1/10W
+             R394        1-216-829-11       METAL CHIP       4.7K      5%    1/10W       R825       1-243-606-71   METAL OXIDE     1K     5%     3W
+        KV-21FS140                                                                                                                                      56
+Downloaded from www.Manualslib.com manuals search engine
+

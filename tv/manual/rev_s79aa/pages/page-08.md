@@ -1,0 +1,71 @@
+![page-08](img/page-08.png)
+
+                                                                                                                                                        KV-21FS140
+
+
+        To Bring Up Screen Test
+        In standby mode, press buttons on the Remote Commander sequentially, in rapid succession, as shown below:
+
+                  DISPLAY             Channel 5          Sound Volume -              POWER
+
+                                                                            Note that this differs from entering the Service Mode (Sound Volume + ).
+
+        The following screen will be displayed indicating the error count:
+                     SELF DIAGNOSTIC
+                     2    OCP        :   0
+                     3    OVP        :   N/A
+                     4    VSTOP      :   0          Number “0” means that no fault was detected.
+                     5    AKB        :   1          Number “1” means a fault was detected one time only.
+                     8    SUP        :   0
+                     101 WDT         :   N/A
+
+                     SERIAL:
+                     MODEL:
+
+
+        Handling of Self-Diagnostic Screen Display
+        Since the diagnostic results displayed on the screen are not automatically cleared, always check the self-diagnostic screen during repairs. When you
+        have completed the repairs, clear the result display to “0”.
+        Unless the result display is cleared to “0”, the self-diagnostic function will not be able to detect subsequent faults after completion of the repairs.
+
+        Clearing the Result Display
+        To clear the result display to “0”, press buttons on the Remote Commander sequentially when the diagnostic screen is displayed, as shown below:
+
+        Channel 8          0
+
+        Quitting the Self-Diagnostic Screen
+        To quit the entire self-diagnostic screen, turn off the power switch on the Remote Commander or the main unit.
+
+        Self-Diagnostic Circuit
+
+                                        A BOARD                      A BOARD                          A BOARD                           A BOARD
+                                          IC001                        IC804                            IC001                             IC003
+                                    Y/CHROMA JUNGLE                   V. OUT                          SYSTEM                            MEMORY
+               FROM                                                                                     SDAO
+              C BOARD               84 IK                             F.B-PLS                               109                        5 SDA
+             IC751 PIN 5                                                         3                13
+                                                                                                     V. GUARD
+                FROM
+              A BOARD               32 EHTO
+                                                                                                      RED-LED 122
+                Q816
+             COLLECTOR                                                                                                              DISPLAY
+
+
+
+        +B overcurrent (OCP)
+        Occurs when an overcurrent on the +B (135V) line is detected by pin 32 of IC001 (A Board). If the voltage of pin 32 of IC001 (A Board) is more than 4V
+        when V.SYNC is more than seven verticals in a period, the unit will automatically turn off.
+        V-Protect
+        Occurs when an absence of the vertical deﬂection pulse is detected by pin 13 of IC001 (A Board). Power supply will shut down when waveform interval
+        exceeds 2 seconds.
+        IK (AKB)
+        If the RGB levels* do not balance within 15 seconds after the power is turned on, this error will be detected by IC001 (A Board). TV will stay on, but there
+        will be no picture.
+        Power Supply NG (+5V) for Video Processor
+        Occurs when IC001 internal HV protect detects an abnormal H-Pulse (frequency) due to improper power supply to IC001. The TV cuts off high voltage
+        power of anode CRT. No picture will be detected. eg: faulty IC602 or IC604
+
+        KV-21FS140                                                                                                                                                8
+Downloaded from www.Manualslib.com manuals search engine
+

@@ -1,0 +1,317 @@
+![page-31](img/page-31.png)
+
+VIF SAW
+
+TEQE2X904B
+
+3.3/5V
+
+AGCin
+
+SIF SAW
+
+STBY
+3.3V
+
+3.3V
+
+5V
+
+5V
+
+Buffer
+
+TV
+
+44.Intco-IF
+
+VIF & SIF
+
+Audio Amp
+
+RGB Amp
+
+POWER
+
+43.IFVO
+62,63.HPL, R
+
+Color
+Decoder
+
+48.MON-OUT
+MON OUT
+
+36,37.OutL, R
+
+DGC
+
+114.STBY SW
+115.DGC RELAY
+
+YUV
+Processor
+
+RGB
+
+85~87
+RGBout
+84.lk
+
+RGB
+1k
+
+65.VM
+
+VM
+
++B
+
+SECTION 4
+DIAGRAMS
+
+Mon
+out
+
+L(Mono)
+R
+Video
+L(Mono)
+R
+
+29~30.SIF1~2 24-5.VIFIN1~2
+
+33.AVL/2SIF 120.S2
+
+31.AGCout
+
+TV
+out
+
+AUDIO VCC
+
+Relay
+
+30V
+
+Radio
+BPF
+
+8V
+
+8V
+
+LNA cct
+12C
+
++B line
+
+3.3V
+RESET
+
+111.S1/VC(GA)
+AV1
+
+AV2
+
+23. VD+
+22. VD-
+
+58.CVB51/Y1
+59,C1
+56, 57InL1,InR1
+55.CV/Y2
+53,54.InL,R2
+70 CX
+
+AV3
+IN
+
+Micro
+Text
+CC & V-chip
+
+RGB/
+DVD
+in
+
+G/Y
+B/PB
+R/PR
+L
+R
+
+120.P3.3(S2)
+AV3
+
+DVD/RGB
+
+Rot. cct
+On/Off
+
+I/O Port
+
+CV/YC
+L(Mono)
+
+HV
+
+V-out
+
+V+, V-
+
+112.ROT CTRL
+113.ROT SW
+
+ONE CHIP
+
+51.CY/Y4
+52.C2
+49-50 InL,R4
+
+Jungle
+
+21.EWD
+67.Hout
+66.AFC
+
+78~80.RGB3
+34,35 InLs,R5
+
+Pin out
+H-drive
+H-out
+
+EW, Hd
+Hp
+
+32.EHTO
+83.ABL
+
+EHT, ABL
+
++/-15V
+
+Hout
+
+FBT
+
+feedback
+Audio Amp
+
+Fbl(RGBin)
+
+77.SCART FBL
+70-72.VUYin
+74~76.YUVout
+10.Xtalin
+
+I/O Port
+
+PLL
+
+24.576MHz
+11.Xtalout
+
+102.BINT
+122~3.RED~GREEN LED
+
+AV2
+in
+
+CV/YC
+L(Mono)
+R
+CV/YC
+L(Mono)
+R
+
+119.KEY
+116.DI-JP/MODE1-EU
+103.DI-JP/MODE2-EU/
+MON SW-MONO
+126.AGC-MUTE
+98, 99. SCL1,SDA1
+108, 109. SCL0,SDA0
+
+– 30 –
+
+AV1
+in
+
+A
+D
+C
+
+60,61
+LSL,R
+
+Stereo,
+DAP
+
+L, R
+
+DAC
+
+L
+
+10W
+
+R
+
+10W
+
+2ch
+mute
+
+106.AUDIO MUTE
+105.AUDIO STANDBY
+
+stdby
+
+LED
+I
+
+B-INT
+
+Key buttons
+
+Device 12C
+SIRCS
+
+RM-YA005
+
+IF
+
+RF AMP Tuner
+
+30V
+
+R
+VAR
+
+12C
+
+NVM
+
+HP
+
+ATT
+
+L,R
+
+KV-21FS140
+
+MAIN
+Power
+Supply
+
+4-1. BLOCK DIAGRAM
+
+CISPR/
+PFC
+
+AC in ~
+110-220V
+
+

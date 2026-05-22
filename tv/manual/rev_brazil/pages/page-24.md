@@ -1,0 +1,120 @@
+![page-24](img/page-24.png)
+
+TVJ
+
+Functionality
+
+Init.
+
+Range
+
+Category
+
+No.
+
+Name
+
+Dec
+
+Dec
+
+OPTB
+
+000
+
+IALL
+
+000
+
+00 1
+
+Standard Write Switch (not memorized in NVM)
+
+001
+
+OPB1
+
+000
+
+255
+
+Option 1 (System related)
+
+refer page 25
+
+002
+
+OPB2
+
+000
+
+255
+
+Option 2 (Video Signal related)
+
+refer page 25
+
+003
+
+OPB3
+
+000
+
+255
+
+Option 3 (Stereo Decoding related)
+
+refer page 26
+
+004
+
+OPB4
+
+000
+
+255
+
+Option 4 (Miscellaneous)
+
+refer page 26
+
+005
+
+OPB5
+
+000
+
+255
+
+Option 5 (Miscellaneous)
+
+refer page 27
+
+006
+
+OPB6
+
+000
+
+255
+
+Option 6 (OSD Language related)
+
+refer page 27
+
+Function
+
+Table & Note
+
+Device Name
+
+Common
+
+X
+
+– 23 –
+RM-YA005
+
+KV-21FS140
+
+

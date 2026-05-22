@@ -1,0 +1,82 @@
+![page-04](img/page-04.png)
+
+                                                                                                                                                              KV-21FS140
+
+
+                                                                 SPECIFICATIONS
+
+
+
+                                                                                                         
+
+                                                                                               
+                                        
+                                                                                 !                              
+                                                                              "# $# !                            
+                                                                                % &!
+                                                                                   !                             
+                                                                      '( )*!                               
+                                             +  )*!
+                                                                            , ).'/!                        
+                                                                      '3).'/!5!                      
+                                      6  )*/7/6!
+                                                                                                  
+                                                                                                   
+                                      .'
+                                                                                       (8                     
+                                                                                      9                      
+                                                                                             1) 1 Vp-p 75 ohms unbalanced, sync negative
+                                                                                             2) Y: 1.0 Vp-p, 75 ohms, sync negative; PB: 0.7 Vp-p, 75 ohms;
+                                                                                                PR Vp-p, 75 ohms.
+                                                                                             3) 500 mVrms (100% modulation), Impedance: 47 kilohms
+                                                                                             4) This speciﬁcation is the maximum wattage.
+
+
+
+
+                  Television system
+                  American TV standard, NTSC
+
+                  Channel coverage
+                  VHF: 2-13/UHF: 14-69/CATV: 1-125
+
+                  Antenna
+                  75-ohm external antenna terminal for VHF/UHF
+
+                  Picture tube
+                             ®
+                  FD Trinitron tube
+
+                  Visible screen size
+                  20-inch picture measured diagonally                                                           As an ENERGY STAR® Partner, Sony
+                                                                                                                Corporation has determined that this
+                                                                                                                product meets the ENERGY STAR®
+                  Actual screen size                                                                            guidelines for energy efficiency. ENERGY
+                                                                                                                STAR® is a U.S. registered mark.
+                  21-inch measured diagonally
+
+                  Supplied Accessories                                                                          SRS and the ( )® symbol are trademarks of
+                  Remote Commander RM-YA005                                                                     SRS Labs, Inc.
+                  Two Size AA (R6) Batteries
+                                                                                                                    Manufactured under license from Dolby
+                  Optional Accessories                                                                              Laboratories Licensing Corporation. Dolby
+                  Cables: VMC-810S/820S, VMC-720M,                                                                  and the double-D symbol are trademarks of
+                                                                                                                    Dolby Laboratories.
+                  YC-YC-15V/30V, RK74A
+
+                                                                                                                Manufactured under license from BBE Sound,
+                                                                                                                Inc. Licensed by BBE Sound, Inc. under USP
+                                                                                                                4638258, 5510752 and 5736897. BBE and BBE
+                                                                                                                symbol are registered trademarks of BBE
+                                                                                                                Sound, Inc.
+                                                                                      WEGA, FD Trinitron and Steady Sound are registered
+                                                                                      trademarks of Sony Corporation.
+
+
+
+
+                                                                                Design and speciﬁcations are subject to change without notice.
+
+        KV-21FS140                                                                                                                                                    4
+Downloaded from www.Manualslib.com manuals search engine
+

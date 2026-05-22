@@ -1,0 +1,75 @@
+![page-07](img/page-07.png)
+
+                                                                                                                                                                  KV-21FS140
+
+
+                                                               SELF-DIAGNOSTIC FUNCTION                                           Self Diagnosis
+                                                                                                                                             Supported model
+
+
+
+         The units in this manual contain a self-diagnostic function. If an error occurs, the STANDBY LED indicator will automatically begin to ﬂash. The number of
+         times the LED ﬂashes translates to a probable source of the problem. A deﬁnition of the STANDBY LED ﬂash indicators is listed in the instruction manual
+         for the user’s knowledge and reference. If an error symptom cannot be reproduced, the Remote Commander can be used to review the failure occurrence
+         data stored in memory to reveal past problems and how often these problems occur.
+
+         1. Diagnostic Test Indicators
+
+         When an error occurs, the STANDBY LED indicator will ﬂash a set number of times to indicate the possible cause of the problem. If there is more than
+         one error, the indicator will identify the ﬁrst of the problem areas.
+         Results for all of the following diagnostic items are displayed on screen. No error has occurred if the screen displays a “0”.
+
+             Diagnostic Item           No. of Times        Self-Diagnositc
+               Description            STANDBY LED              Display/             Probable Cause Location                                Detected Symptoms
+                                    Indicator Flashes     Diagnostic Result
+          Power does not turn on       Does not light                         • Power cord is not plugged in.           • Power does not come on.
+                                                                              • Fuse is burned out (F600). (A Board)    • No power is supplied to the TV.
+                                                                                                                        • AC Power supply is faulty.
+
+          +B overcurrent (OCP)*          2 times *               2:0          • H.OUT (Q805) is shorted. (A Board)      • Power does not come on.
+                                                                 or           • IC751 is shorted. (C Board)             • Load on power line is shorted.
+                                                              2:1 - 255
+
+          V-Protect (OVP)                4 times                  4:0         • +13V is not supplied. (A Board)         • Has entered standby state after horizontal raster.
+                                                                  or          • IC804 is faulty. (A Board)              • Vertical deﬂection pulse is stopped.
+                                                               4:1 - 255                                                • Power line is shorted or power supply is stopped.
+
+          IK (AKB)                       5 times                 5:0          • Video OUT (IC1545) is faulty(A Board) • No raster is generated.
+                                                                 or           • IC001 is faulty. (A Board)            • CRT Cathode current detection reference pulse
+                                                              5:1 - 255       • Screen (G2) is improperly adjusted.**   output is small.
+          Power Supply                   8 times                 8:0          • IC604 is faulty.                        • No power supply to CRT Anode.
+          NG (+5V) for                                           or           • IC602 is faulty.                        • No RASTER is generated.
+          Video Processor                                     8:1 - 255
+                                         *One ﬂash count is not used for self-diagnostic.
+
+         *If a +B overcurrent is detected, stoppage of the vertical deﬂection is detected simultaneously. The symptom that is diagnosed ﬁrst by the mircrocontroller
+         is displayed on the screen.
+         **Refer to Screen (G2) Adjustments in Section 2-4. of this manual.
+
+         2. Display of STANDBY LED Flash Count
+
+
+                               2 times
+                               4 times
+                               5 times
+
+
+             LED ON 0.3 sec.
+             LED OFF 0.3 sec.                        LED OFF
+                                                      3 sec.
+                                                                                                                       Standby indicator
+
+
+         3. Stopping the STANDBY LED Indicator Flash
+         Turn off the power switch on the TV main unit or unplug the power cord from the outlet to stop the STANDBY LED Indicator from ﬂashing.
+
+         4. Self-Diagnostic Screen Display
+         For errors with symptoms such as “power sometimes shuts off” or “screen sometimes goes out” that cannot be conﬁrmed, it is possible to bring up past
+         occurrences of failure on the screen for conﬁrmation.
+
+
+
+
+        KV-21FS140                                                                                                                                                             7
+Downloaded from www.Manualslib.com manuals search engine
+

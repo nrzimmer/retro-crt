@@ -1,0 +1,92 @@
+![page-19](img/page-19.png)
+
+                                                                                                                                                       KV-21FS140
+
+
+        12. For single system model with NTSC 4.43, select TV channel with         PAL 50HZ NORMAL MODE
+            NTSC 4.43 and repeat items (3) to (8)
+                                                                                   1.   Input PAL signal 50Hz in the Service Mode.
+                                           VB3 VB4                                 2.   Set Wide Mode to “OFF”.
+                               VB1                                                 3.   Perform the below adjustments using the “General Setting”
+                                                      80mV
+                                     VB2                                                sequence.
+
+                                                                                        Item No.       Function          Illustration
+                                                                                        GEOM 013    Vertical Shift
+                                                                                        (VPOS)
+                         The highest level of VB1, VB2, VB3, VB4
+                            must be aligned at the same time.
+                                                                                        GEOM 011    Vertical Amplitude
+                               The ideal difference between                             (VSIZ)
+                               VB2 and VB3 is within ± 80mV
+                                                                                                                         Note: Adjust VSIZ to
+                                                                                                                               12.4±(SPCB)
+        13. Once adjustment is completed in Video mode, carry out adjustment                                                   11.3±(PAL Monoscope)
+                                                                                                                               11.5±(NTSC Monoscope)
+            in DVD mode. Set TV to DVD mode. Input NTSC 3.58 CB to DVD
+                                                                                        GEOM 000    Horizontal Shift
+            set and perform steps 4 to 9 and 11.
+                                                                                        (HPOS)
+
+
+        Sub Bright Adjustment                                                           GEOM 009
+                                                                                        (EWTZ)
+                                                                                                    EW Trapezoid
+
+
+        1.   Set TV to RF mode.
+                                                                                        GEOM 005    EW Width (EW)
+        2.   Input PAL monoscope to RF mode.                                            (HSIZ)
+        3.   Set Brightness 50% and Picture to “MINIMUM”.
+                                                                                                                         Note: Adjust HSIZ to
+        4.   Press 1 (or 4 ) to select WHBL 010 “SBRT”.                                                                        16.4±(SPCB)
+                                                                                                                               14.6±(PAL Monoscope)
+        5.   Press 3 to increase the data value, or 6 to decrease the data value                                               15.3±(NTSC Monoscope)
+             so that the cut-off level is 10 IRE, slightly glimmer: 20 IRE.             GEOM 002    Horizontal Bow
+        6.   Press MUTING then 0 to write into memory.                                  (HBOW)
+
+
+                                                                                        GEOM 006    EW Parabola/Width
+        Geometry Adjustment                                                             (EWPW)      (PW)
+
+        Geometry adjustment must be done for both color systems PAL and                 GEOM 007    EW Upper Corner
+        NTSC.                                                                           (UCOP)      Parabola
+
+
+                                                                                        GEOM 008    EW Lower Corner
+        General Setting                                                                 (LCOP)      Parabola
+
+        1. Input Monoscope or Special Color Bar (SPCB) signal using a
+                                                                                        GEOM 001    Horizontal
+           pattern generator.
+                                                                                        (HPAR)      Parallelogram
+        2. Access Service Mode.
+        3. Select the category item that needs adjusting by pressing 1 or 4             GEOM 012    S-Correction(SC)
+                                                                                        (SCOR)
+        4. Press 3 to increase the data value, or 6 to decrease the data
+           value.
+                                                                                        GEOM 003    Vertical Linearity
+        5. Press MUTING then 0 to write into memory.                                    (VLIN)
+        NOTE: Geometry Adjustment must be performed for 4 different modes:
+                PAL 50Hz NORMAL MODE,                                                   GEOM 004    Vertical Scroll
+                PAL 50Hz WIDE MODE,                                                     (VSCR)
+
+                NTSC 60Hz NORMAL MODE,
+                NTSC 60Hz WIDE MODE.                                               4.   After completing the adjustments for PAL 50Hz NORMAL MODE,
+                                                                                        set Wide mode to “ON”, and copy all PAL 50Hz NORMAL MODE
+                                                                                        adjusted data to PAL 50Hz WIDE MODE except VSCR.
+                                                                                   5.   Complete the adjustment for NTSC 60Hz NORMAL MODE.
+                                                                                   6.   Set Wide mode to “OFF”.
+                                                                                   7.   Complete the adjustment items listed in the above table using the
+                                                                                        “General Setting” sequence.
+                                                                                   8.   After completing the adjustments set Wide mode to “ON” and copy
+                                                                                        all NTSC 60Hz NORMAL MODE adjusted data to NTSC 60Hz
+                                                                                        WIDE MODE except VSCR.
+                                                                                   9.   After completing all the adjustments, reconﬁrm VSIZ and VPOS.
+
+
+
+
+        KV-21FS140                                                                                                                                           19
+Downloaded from www.Manualslib.com manuals search engine
+

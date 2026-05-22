@@ -1,0 +1,243 @@
+![page-28](img/page-28.png)
+
+KV-21FS140
+RM-YA005
+
+No. OPB5
+Item
+
+Signal
+Booster
+
+MSYS
+ASD
+
+COSMIC
+ASD
+
+ASD
+
+Tilt
+
+Band
+Edge
+
+IP
+
+Wide
+
+DEC
+
+KV-21FS140
+(Brazil)
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+1
+
+1
+
+3
+
+KV-21FS140
+(SV-13105(E))
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+1
+
+1
+
+3
+
+KV-21FS140
+(SV-13106(E))
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+1
+
+1
+
+3
+
+Signal Booster
+MSYS ASD
+
+Signal Booster feature
+(ASD Improvement for
+M System channels)
+*Only applicable when ASD = 1
+Automatic Standard Detection
+Using COSMIC (Non-Stereo)
+(Automatic Standard Detection)
+(Tilt Correction/PIC Rotation)
+(VHF-H band Limit Position)
+(Intelligent Picture &
+Intelligent Picture Plus)
+(Wide Mode/V-Compressed)
+
+COSMIC ASD
+ASD
+Tilt
+Band Edge
+IP
+Wide
+
+0 = disabled, 1 = enabled
+0 = disabled, 1 = enabled
+
+0 = disabled, 1 = enabled
+0 = disabled, 1 = enabled
+0 = disabled, 1 = enabled
+0 = 427.25MHz, 1 = 429.25MHz
+0 = disabled, 1 = enabled
+0 = disabled, 1 = enabled
+
+No. OPB6
+Item
+
+Reserved
+
+3D OSD
+
+3D Comb
+
+PiP
+
+KV-21FS140
+(Brazil)
+
+0
+
+0
+
+0
+
+0
+
+0
+
+OSD Language Selection
+1
+
+0
+
+1
+
+5
+
+KV-21FS140
+(SV-13105(E))
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+1
+
+1
+
+3
+
+KV-21FS140
+(SV-13106(E))
+
+0
+
+0
+
+0
+
+0
+
+0
+
+0
+
+1
+
+1
+
+3
+
+Reserved
+3D OSD
+
+Not used
+(BX1L Full version GA Multi
+Destination ONLY)
+
+3D Comb
+
+3D comb feature
+
+0 = Comb Not available
+1 = Comb available
+
+PiP
+
+PiP feature
+
+0 = PiP Not Available
+1 = PiP available
+
+OSD Language Selection
+
+DEC
+
+0 = Normal with 3D Intelligent Picture OSD
+1 = Disable 3D Intelligent Picture OSD
+
+US (GA NTSC)
+
+1x1x = Complicated Chinese
+1xxx = Simplified Chinese
+
+GA
+
+x1xx = Arabic/Russian
+xx1x = Thai
+xxx1 = Persian/Vietnamese
+
+– 27 –
+
+

@@ -1,0 +1,159 @@
+![page-11](img/page-11.png)
+
+KV-21FS140
+RM-YA005
+
+SECTION 3
+CIRCUIT ADJUSTMENTS
+3-1. ADJUSTMENTS WITH COMMANDER
+Service adjustments to this model can be performed using the supplied remote commander RM-YA005.
+
+a. ENTERING SERVICE MODE
+With the unit on standby
+t [DISPLAY] t 5 t [VOL $+% ] t [POWER]
+This operation sequence puts the unit into service mode.
+This screen display is:
+
+category
+
+item no.
+in decimal
+
+item name
+
+service data
+in decimal
+
+NVM
+NG
+
+service command
+
+field
+frequency
+
+channel no./
+video input name
+
+GEOM
+
+006
+
+HSIZ
+
+031
+
+x
+
+SERVICE
+
+60
+
+S VIDEO 1
+
+release ID
+
+software
+version
+
+service data
+in binary
+
+reserved
+for factory
+
+color system
+
+power on time
+(decimal)
+
+SUS01
+
+0.69U
+
+0001 1111
+
+FF FF
+
+NTSC3
+
+65535
+
+Flash DCXO
+111 11 11 1 7 11
+
+FG
+
+xy 111
+
+Status Byte
+#1 SSD
+
+Status Byte
+#2 SSD
+
+000000
+
+000000
+
+VDSP_C Flag
+CO_LOCKED
+VDSP
+Detected Stereo Type (Direct Value from CZ_ Stereo_Mode)
+S : for Sony
+A : Aiwa
+U S : US/Latin/Taiwan
+E U : Europe
+G A : General Area
+J P : Japan
+0 1 : serial no. of the M/P release
+for each destination
+
+111
+
+Needed for Nicam DCXO aligment Purpose
+
+xy
+
+Value of x = 0 - Unknown, 1 - BTSC, 2 - A2, 3 - NICAM,
+4 - KOREAN, 5 - Japan, 6 - AV Stereo
+Value of y = 0 - Mono, 1 - Stereo, 2 - Bilingual, 4 - SAP/Single
+
+b. METHOD OF CANCELLATION FROM SERVICE MODE
+Set the standby condition (Press [POWER] button on the commander), then press [POWER] button again, hereupon it becomes
+TV mode.
+
+c. METHOD OF WRITE INTO MEMORY
+1.
+2.
+3.
+4.
+5.
+
+Set to Service Mode.
+Press 1 (UP) and 4 (DOWN), to select the adjustment item.
+Change item by pressing 3, 6.
+Press [MUTING] button to indicate WRITE on the screen.
+Press - button to write into memory.
+
+1, 4
+r
+3, 6
+r
+[MUTING]
+r
+-
+
+Select the adjustment item.
+Raise/lower the data value.
+Writes.
+Executes the writing.
+
+d. MEMORY WRITE CONFIRMATION METHOD
+1. After adjustment, pull out the plug from AC outlet, and then plug into AC outlet again.
+2. Turn the power switch ON and set to Service Mode.
+3. Call the adjusted items again to confirm adjustments were made.
+
+– 10 –
+
+

@@ -1,0 +1,69 @@
+![page-60](img/page-60.png)
+
+                                                                                                                                                 KV-21FS140
+
+
+
+          NOTE: The components identiﬁed by shading
+          and ! mark are critical for safety. Replace only
+                                                                                                                                                     A
+          with part number speciﬁed.
+
+
+              REF. NO.     PART NO.          DESCRIPTION      VALUES                     REF. NO.     PART NO.      DESCRIPTION     VALUES
+
+              C312       1-162-964-11       CERAMIC CHIP     0.001µF   10%   50V         C654       1-102-228-00   CERAMIC        470pF     10%    500V
+              C313       1-162-964-11       CERAMIC CHIP     0.001µF   10%   50V     !   C657       1-127-943-51   CERAMIC        330pF     10%    250V
+              C316       1-125-891-11       CERAMIC CHIP     0.47µF    10%   10V     !   C660       1-165-539-31   FILM           0.22µF    10%    275V
+              C317       1-126-934-11       ELECT            220µF     20%   16V         C662       1-107-826-11   CERAMIC CHIP   0.1µF     10%    16V
+              C318       1-107-826-11       CERAMIC CHIP     0.1µF     10%   16V         C665       1-110-626-11   ELECT          330µF     20%    160V
+
+              C319       1-162-923-11       CERAMIC CHIP     47pF      5%    50V         C668       1-126-933-11   ELECT          100µF     20%    16V
+              C320       1-162-923-11       CERAMIC CHIP     47pF      5%    50V     !   C670       1-127-943-51   CERAMIC        330pF     10%    250V
+              C321       1-162-970-11       CERAMIC CHIP     0.01µF    10%   25V         C672       1-162-970-11   CERAMIC CHIP   0.01µF    10%    25V
+              C322       1-162-964-11       CERAMIC CHIP     0.001µF   10%   50V         C678       1-164-505-11   CERAMIC CHIP   2.2µF            16V
+              C323       1-112-034-91       CERAMIC CHIP     0.01µF    5%    50V         C680       1-164-315-11   CERAMIC CHIP   470pF     5%     50V
+
+              C325       1-164-227-11       CERAMIC CHIP     0.022µF   10%   25V         C682       1-115-466-91   ELECT          1000µF    20%    16V
+              C328       1-162-970-11       CERAMIC CHIP     0.01µF    10%   25V         C685       1-126-934-11   ELECT          220µF     20%    16V
+              C333       1-126-925-91       ELECT            470µF     20%   10V         C686       1-117-720-11   CERAMIC CHIP   4.7µF            10V
+          !   C600       1-119-895-51       CERAMIC          4700pF    20%   250V        C805       1-126-960-11   ELECT          1µF       20%    50V
+          !   C602       1-165-538-31       FILM             0.1µF     10%   275V        C806       1-106-375-12   MYLAR          0.022µF   5%     200V
+
+              C605       1-161-830-00       CERAMIC          0.0047µF 99%    500V        C807       1-162-964-11   CERAMIC CHIP   0.001µF   10%    50V
+              C606       1-161-830-00       CERAMIC          0.0047µF 99%    500V        C808       1-102-244-00   CERAMIC        220pF     10%    500V
+              C609       1-161-830-00       CERAMIC          0.0047µF 99%    500V        C809       1-162-964-11   CERAMIC CHIP   0.001µF   10%    50V
+              C610       1-161-830-00       CERAMIC          0.0047µF 99%    500V        C810       1-162-318-11   CERAMIC        0.001µF   10%    500V
+              C611       1-117-751-11       ELECT(BLOCK)     220µF    20%    450V        C811       1-126-925-91   ELECT          470µF     20%    10V
+
+              C612       1-117-623-11       FILM             1500pF    3%    1.2KV       C822       1-162-970-11   CERAMIC CHIP   0.01µF    10%    25V
+              C616       1-164-230-11       CERAMIC CHIP     220pF     5%    50V         C825       1-162-970-11   CERAMIC CHIP   0.01µF    10%    25V
+              C619       1-130-491-00       MYLAR            0.047µF   5%    50V         C826       1-164-227-11   CERAMIC CHIP   0.022µF   10%    25V
+              C621       1-126-963-11       ELECT            4.7µF     20%   50V         C828       1-126-933-11   ELECT          100µF     20%    16V
+          !   C622       1-113-889-11       CERAMIC          0.001µF   20%   250V        C830       1-162-970-11   CERAMIC CHIP   0.01µF    10%    25V
+
+              C623       1-162-966-11       CERAMIC CHIP     0.0022µF 10%    50V         C831       1-107-826-11   CERAMIC CHIP   0.1µF    10%     16V
+              C624       1-126-967-11       ELECT            47µF     20%    50V         C832       1-164-230-11   CERAMIC CHIP   220pF    5%      50V
+          !   C625       1-127-943-51       CERAMIC          330pF    10%    250V        C833       1-107-826-11   CERAMIC CHIP   0.1µF    10%     16V
+              C626       1-102-228-00       CERAMIC          470pF    10%    500V        C835       1-162-970-11   CERAMIC CHIP   0.01µF 10%       25V
+              C628       1-125-772-91       CERAMIC          1500pF 10%      2KV         C837       1-162-968-11   CERAMIC CHIP   0.0047µF 10%     50V
+
+              C630       1-128-549-11       ELECT            3300µF    20%   35V         C838       1-106-220-00   MYLAR          0.1µF    10%     100V
+              C632       1-126-953-11       ELECT            2200µF    20%   35V         C839       1-162-966-11   CERAMIC CHIP   0.0022µF 10%     50V
+              C634       1-126-941-11       ELECT            470µF     20%   25V     !   C840       1-117-647-21   FILM           13000pF 3%       1.2KV
+              C635       1-126-971-11       ELECT            470µF     20%   50V         C841       1-107-846-11   FILM           0.1µF    5%      400V
+              C637       1-126-933-11       ELECT            100µF     20%   16V         C842       1-100-122-21   FILM           0.022µF 5%       400V
+
+              C638       1-126-933-11       ELECT            100µF     20%   16V         C844       1-165-176-11   CERAMIC CHIP   0.047µF   10%    16V
+              C639       1-126-933-11       ELECT            100µF     20%   16V         C845       1-162-964-11   CERAMIC CHIP   0.001µF   10%    50V
+              C641       1-126-933-11       ELECT            100µF     20%   16V         C846       1-162-115-00   CERAMIC        330pF     10%    2KV
+              C643       1-117-720-11       CERAMIC CHIP     4.7µF           10V         C847       1-107-364-11   MYLAR          0.01µF    10%    200V
+              C644       1-164-315-11       CERAMIC CHIP     470pF     5%    50V         C848       1-107-364-11   MYLAR          0.01µF    10%    200V
+
+              C647       1-126-935-11       ELECT            470µF     20%   16V         C849       1-106-375-12   MYLAR          0.022µF   5%     200V
+              C649       1-126-933-11       ELECT            100µF     20%   16V         C850       1-106-220-00   MYLAR          0.1µF     10%    100V
+              C652       1-102-228-00       CERAMIC          470pF     10%   500V        C851       1-107-675-11   ELECT          1µF       20%    450V
+              C653       1-102-228-00       CERAMIC          470pF     10%   500V        C852       1-117-665-11   FILM           0.33µF    5%     250V
+        KV-21FS140                                                                                                                                         60
+Downloaded from www.Manualslib.com manuals search engine
+

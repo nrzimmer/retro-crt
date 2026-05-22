@@ -1,0 +1,168 @@
+![page-09](img/page-09.png)
+
+KV-21FS140
+RM-YA005
+
+1. (Moving vertically), adjust the 4 pole magnet to converge
+red, green and blue dots in the center of the screen.
+2. Tilt the 4 pole magnet and adjust static convergence to
+open or close the 4 pole magnet.
+
+3. When the 4 pole magnet is moved in the direction of
+arrow A and B, the red, green and blue dots moves as
+shown below:
+A
+B
+
+A
+
+B
+
+B
+
+B
+
+G
+
+G
+
+R
+
+R
+
+c) Convergence Rough Adjustment
+Preparation :
+• Before starting this adjustment, adjust the horizontal
+and vertical static convergence.
+Input cross hatch pattern.
+i) TLH
+Adjust the horizontal convergence of red and blue dots
+by inserting TLH Correction Plate to the DY pocket (left
+or right).
+ii) YCH
+Adjust YCH to balance Y axis.
+iii) TLV
+Adjust the vertical convergence of red and blue dots.
+iv) XCV
+Adjust XCV to balance X-axis.
+
+G
+
+R
+
+B
+
+G
+
+B
+R
+R
+B
+
+Moved RV750 (H.STAT)
+
+R
+
+RB
+
+RB
+
+YCH
+
+TLH
+
+XCV
+
+TLV
+
+ON DY:
+
+B
+
+TLV
+YCH
+DY pocket
+TLH Plate
+TLV
+
+b) Horizontal Static Convergence
+
+XCV
+
+If the blue dots does not converge with the red and green
+dots, use the 6 pole magnet to adjust in the manner
+described below.
+R G
+
+B
+
+R
+
+G
+
+B
+
+R
+
+XCV
+
+DY pocket
+
+G B
+
+d) Screen Corner Convergence
+Affix a Piece A (90), Convergence Correct/Permaloy Assy
+Correction to the misconverged areas.
+R
+
+B
+G
+
+R
+
+G
+
+B
+
+G
+R
+
+B
+
+b
+
+a
+a-d : screen-corner
+misconvergence
+
+c
+
+d
+
+b1
+
+6 Pole
+Magnet
+
+6 Pole Magnet
+
+a1
+
+Purity
+
+DY pocket
+d1
+
+4 Pole Magnet
+a1~d1:Piece A (90), Convergence Correct
+or
+Permaloy Assy Correction
+
+4 Pole
+Magnet
+
+–8–
+
+c1
+
+

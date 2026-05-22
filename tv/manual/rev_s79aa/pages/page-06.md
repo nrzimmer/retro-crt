@@ -1,0 +1,73 @@
+![page-06](img/page-06.png)
+
+                                                                                                                                                 KV-21FS140
+
+
+                                                                    SAFETY CHECK-OUT
+
+
+         After correcting the original service problem, perform the following      The AC leakage from any exposed metal part to earth ground and from
+         safety checks before releasing the set to the customer:                   all exposed metal parts to any exposed metal part having a return to
+                                                                                   chassis, must not exceed 0.5 mA (500 microamperes). Leakage current
+         1. Check the area of your repair for unsoldered or poorly soldered        can be measured by any one of three methods.
+            connections. Check the entire board surface for solder splashes and
+            bridges.                                                               1. A commercial leakage tester, such as the Simpson 229 or RCA
+                                                                                       WT-540A. Follow the manufacturers’ instructions to use these
+         2. Check the interboard wiring to ensure that no wires are “pinched” or       instructions.
+             touching high-wattage resistors.
+                                                                                   2. A battery-operated AC milliampmeter. The Data Precision 245
+         3. Check that all control knobs, shields, covers, ground straps, and          digital multimeter is suitable for this job.
+             mounting hardware have been replaced. Be absolutely certain that
+             you have replaced all the insulators.                                 3. Measuring the voltage drop across a resistor by means of a VOM
+                                                                                       or battery-operated AC voltmeter. The “limit” indication is 0.75 V,
+         4. Look for unauthorized replacement parts, particularly transistors,         so analog meters must have an accurate low voltage scale. The
+             that were installed during a previous repair. Point them out to the       Simpson’s 250 and Sanwa SH-63TRD are examples of passive
+             customer and recommend their replacement.                                 VOMs that are suitable. Nearly all battery-operated digital
+                                                                                       multimeters that have a 2 VAC range are suitable (see Figure A).
+
+         5. Look for parts which, though functioning, show obvious signs of
+             deterioration. Point them out to the customer and recommend their
+                                                                                   How to Find a Good Earth Ground
+             replacement.
+                                                                                   A cold-water pipe is a guaranteed earth ground; the cover-plate
+                                                                                   retaining screw on most AC outlet boxes is also at earth ground. If the
+         6.   Check the line cords for cracks and abrasion. Recommend the          retaining screw is to be used as your earth ground, verify that it is at
+              replacement of any such line cord to the customer.                   ground by measuring the resistance between it and a cold-water pipe
+                                                                                   with an ohmmeter. The reading should be zero ohms.
+         7.   Check the B+ and HV to see if they are speciﬁed values. Make sure
+              your instruments are accurate; be suspicious of your HV meter if     If a cold-water pipe is not accessible, connect a 60- to 100-watt trouble-
+              sets always have low HV.                                             light (not a neon lamp) between the hot side of the receptacle and the
+                                                                                   retaining screw. Try both slots, if necessary, to locate the hot side on
+                                                                                   the line; the lamp should light at normal brilliance if the screw is at
+         8.  Check the antenna terminals, metal trim, “metallized” knobs,          ground potential (see Figure B).
+             screws, and all other exposed metal parts for AC leakage. Check
+             leakage as described below.
+         Leakage Test
+
+
+                                To Exposed Metal
+                                   Parts on Set
+
+
+                                                                                     Trouble Light
+                                                                                                                        Ohmmeter
+                                                                                                   AC Outlet Box
+                                                                                                                                       Cold-water Pipe
+                0.15 µF                      1.5 K Ω                 AC
+                                                                 Voltmeter
+                                                                  (0.75 V)
+
+
+
+
+                                  Earth Ground
+
+
+                  Figure A. Using an AC voltmeter to check AC leakage.                               Figure B. Checking for earth ground.
+
+
+
+
+        KV-21FS140                                                                                                                                         6
+Downloaded from www.Manualslib.com manuals search engine
+
