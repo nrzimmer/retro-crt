@@ -1,0 +1,378 @@
+<svg width="1200" height="820" xmlns="http://www.w3.org/2000/svg"
+     font-family="Arial, sans-serif" font-size="12" fill="black">
+
+  <!-- Background -->
+  <rect width="1200" height="820" fill="white"/>
+
+  <!-- Title -->
+  <text x="600" y="28" text-anchor="middle" font-size="16" font-weight="bold">RGB Mod — KV-21FS140 — Inject via CN004/CN701</text>
+  <text x="600" y="46" text-anchor="middle" font-size="11" fill="#555">74HCT4053 triple 2:1 mux — inject at A Board CN004 / C Board CN701</text>
+
+  <!-- ============================================================ -->
+  <!-- COLUMN HEADERS                                               -->
+  <!-- ============================================================ -->
+  <text x="60"  y="72" text-anchor="middle" font-size="11" fill="#888">RGB SOURCE</text>
+  <text x="230" y="72" text-anchor="middle" font-size="11" fill="#888">TERM+COUPLE</text>
+  <text x="390" y="72" text-anchor="middle" font-size="11" fill="#888">BIAS</text>
+  <text x="540" y="72" text-anchor="middle" font-size="11" fill="#888">MUX IN (RGB)</text>
+  <text x="660" y="72" text-anchor="middle" font-size="11" fill="#888">MUX IN (TV)</text>
+  <text x="820" y="72" text-anchor="middle" font-size="11" fill="#888">MUX OUT</text>
+  <text x="990" y="72" text-anchor="middle" font-size="11" fill="#888">CN701 / CN004</text>
+
+  <!-- ============================================================ -->
+  <!-- 74HCT4053 IC BOX                                             -->
+  <!-- ============================================================ -->
+  <rect x="590" y="85" width="160" height="500" fill="#e8f0ff" stroke="#333" stroke-width="2" rx="4"/>
+  <text x="670" y="108" text-anchor="middle" font-size="13" font-weight="bold" fill="#222">74HCT4053</text>
+  <text x="670" y="124" text-anchor="middle" font-size="10" fill="#555">Triple 2:1 Analog Mux</text>
+  <!-- Pin labels inside IC -->
+  <text x="596" y="182" font-size="9" fill="#444">Y0-A</text>
+  <text x="596" y="202" font-size="9" fill="#444">Y0-B</text>
+  <text x="596" y="226" font-size="9" fill="#444">Y0-out</text>
+
+  <text x="596" y="320" font-size="9" fill="#444">Y1-A</text>
+  <text x="596" y="340" font-size="9" fill="#444">Y1-B</text>
+  <text x="596" y="364" font-size="9" fill="#444">Y1-out</text>
+
+  <text x="596" y="458" font-size="9" fill="#444">Y2-A</text>
+  <text x="596" y="478" font-size="9" fill="#444">Y2-B</text>
+  <text x="596" y="502" font-size="9" fill="#444">Y2-out</text>
+
+  <!-- S pins on right side of IC -->
+  <text x="720" y="560" font-size="9" fill="#444">S (all ch)</text>
+  <text x="720" y="575" font-size="9" fill="#444">INH=GND</text>
+  <text x="720" y="590" font-size="9" fill="#444">VCC=5V</text>
+  <text x="720" y="605" font-size="9" fill="#444">VSS=GND</text>
+
+  <!-- ============================================================ -->
+  <!-- CHANNEL R (y=180)                                            -->
+  <!-- ============================================================ -->
+  <!-- Wire color: red -->
+
+  <!-- Input label -->
+  <rect x="10" y="165" width="70" height="24" fill="#ffe0e0" stroke="#c00" stroke-width="1.5" rx="3"/>
+  <text x="45" y="181" text-anchor="middle" font-size="11" fill="#c00" font-weight="bold">R IN</text>
+  <text x="45" y="194" text-anchor="middle" font-size="9" fill="#c00">0.7Vpp</text>
+
+  <!-- Wire from input to 75R -->
+  <line x1="80" y1="177" x2="130" y2="177" stroke="#c00" stroke-width="1.5"/>
+
+  <!-- 75Ω resistor (R_term): box style -->
+  <rect x="130" y="168" width="50" height="18" fill="white" stroke="#333" stroke-width="1.5" rx="2"/>
+  <text x="155" y="180" text-anchor="middle" font-size="10">75Ω</text>
+  <!-- Wire down to GND -->
+  <line x1="155" y1="186" x2="155" y2="205" stroke="#333" stroke-width="1"/>
+  <line x1="148" y1="205" x2="162" y2="205" stroke="#333" stroke-width="1"/>
+  <line x1="150" y1="208" x2="160" y2="208" stroke="#333" stroke-width="0.7"/>
+  <line x1="153" y1="211" x2="157" y2="211" stroke="#333" stroke-width="0.5"/>
+  <text x="155" y="220" text-anchor="middle" font-size="9" fill="#333">GND</text>
+
+  <!-- Wire from 75R to 47µF cap -->
+  <line x1="180" y1="177" x2="210" y2="177" stroke="#c00" stroke-width="1.5"/>
+
+  <!-- 47µF cap: two vertical lines -->
+  <line x1="210" y1="162" x2="210" y2="192" stroke="#333" stroke-width="2"/>
+  <line x1="216" y1="162" x2="216" y2="192" stroke="#333" stroke-width="2"/>
+  <text x="213" y="158" text-anchor="middle" font-size="9">47µF</text>
+  <text x="213" y="204" text-anchor="middle" font-size="9">16V</text>
+
+  <!-- Wire cap to bias junction -->
+  <line x1="216" y1="177" x2="310" y2="177" stroke="#c00" stroke-width="1.5"/>
+
+  <!-- Bias network at x=310 -->
+  <!-- junction dot -->
+  <circle cx="310" cy="177" r="3" fill="#c00"/>
+  <!-- R_top: up to 5V -->
+  <line x1="310" y1="177" x2="310" y2="145" stroke="#333" stroke-width="1"/>
+  <rect x="285" y="130" width="50" height="15" fill="white" stroke="#333" stroke-width="1.5" rx="2"/>
+  <text x="310" y="141" text-anchor="middle" font-size="9">10kΩ</text>
+  <line x1="310" y1="130" x2="310" y2="115" stroke="#333" stroke-width="1"/>
+  <text x="310" y="112" text-anchor="middle" font-size="9" fill="#060">+5V</text>
+  <!-- R_bot: down to GND -->
+  <line x1="310" y1="177" x2="310" y2="200" stroke="#333" stroke-width="1"/>
+  <rect x="285" y="200" width="50" height="15" fill="white" stroke="#333" stroke-width="1.5" rx="2"/>
+  <text x="310" y="211" text-anchor="middle" font-size="9">1.5kΩ</text>
+  <line x1="310" y1="215" x2="310" y2="230" stroke="#333" stroke-width="1"/>
+  <line x1="303" y1="230" x2="317" y2="230" stroke="#333" stroke-width="1"/>
+  <line x1="305" y1="233" x2="315" y2="233" stroke="#333" stroke-width="0.7"/>
+  <line x1="308" y1="236" x2="312" y2="236" stroke="#333" stroke-width="0.5"/>
+  <!-- bias voltage label -->
+  <text x="330" y="177" font-size="9" fill="#555">≈0.65V</text>
+
+  <!-- Wire bias to IC pin Y0-A (x=590, y=180) -->
+  <line x1="350" y1="177" x2="590" y2="180" stroke="#c00" stroke-width="1.5"/>
+  <text x="470" y="172" text-anchor="middle" font-size="9" fill="#c00">R_rgb</text>
+
+  <!-- TV R signal comes from top: CN004 R pin, enters Y0-B (y=200) -->
+  <!-- TV input from CN004 (right side, comes from x=750 area) -->
+  <line x1="750" y1="140" x2="750" y2="200" stroke="#00a" stroke-width="1.5"/>
+  <line x1="750" y1="200" x2="590" y2="200" stroke="#00a" stroke-width="1.5"/>
+  <text x="760" y="180" font-size="9" fill="#00a">R_tv</text>
+  <text x="760" y="192" font-size="9" fill="#00a">(CN004)</text>
+
+  <!-- Output from IC Y0-out (y=225) to CN701 -->
+  <line x1="750" y1="225" x2="900" y2="225" stroke="#c00" stroke-width="1.5"/>
+  <!-- junction at IC right side -->
+  <line x1="750" y1="200" x2="750" y2="225" stroke="#00a" stroke-width="1" stroke-dasharray="3,2"/>
+
+  <!-- Output wire right side of IC: Y0-out at x=750, y=225 -->
+  <!-- Actually output exits right side... let me put output on right -->
+
+  <!-- ============================================================ -->
+  <!-- CHANNEL G (y=320)                                            -->
+  <!-- ============================================================ -->
+
+  <!-- Input label -->
+  <rect x="10" y="305" width="70" height="24" fill="#e0ffe0" stroke="#060" stroke-width="1.5" rx="3"/>
+  <text x="45" y="321" text-anchor="middle" font-size="11" fill="#060" font-weight="bold">G IN</text>
+  <text x="45" y="334" text-anchor="middle" font-size="9" fill="#060">0.7Vpp</text>
+
+  <line x1="80" y1="317" x2="130" y2="317" stroke="#060" stroke-width="1.5"/>
+  <rect x="130" y="308" width="50" height="18" fill="white" stroke="#333" stroke-width="1.5" rx="2"/>
+  <text x="155" y="320" text-anchor="middle" font-size="10">75Ω</text>
+  <line x1="155" y1="326" x2="155" y2="345" stroke="#333" stroke-width="1"/>
+  <line x1="148" y1="345" x2="162" y2="345" stroke="#333" stroke-width="1"/>
+  <line x1="150" y1="348" x2="160" y2="348" stroke="#333" stroke-width="0.7"/>
+  <line x1="153" y1="351" x2="157" y2="351" stroke="#333" stroke-width="0.5"/>
+  <text x="155" y="360" text-anchor="middle" font-size="9" fill="#333">GND</text>
+
+  <line x1="180" y1="317" x2="210" y2="317" stroke="#060" stroke-width="1.5"/>
+  <line x1="210" y1="302" x2="210" y2="332" stroke="#333" stroke-width="2"/>
+  <line x1="216" y1="302" x2="216" y2="332" stroke="#333" stroke-width="2"/>
+  <text x="213" y="298" text-anchor="middle" font-size="9">47µF</text>
+  <text x="213" y="344" text-anchor="middle" font-size="9">16V</text>
+
+  <line x1="216" y1="317" x2="310" y2="317" stroke="#060" stroke-width="1.5"/>
+  <circle cx="310" cy="317" r="3" fill="#060"/>
+  <line x1="310" y1="317" x2="310" y2="285" stroke="#333" stroke-width="1"/>
+  <rect x="285" y="270" width="50" height="15" fill="white" stroke="#333" stroke-width="1.5" rx="2"/>
+  <text x="310" y="281" text-anchor="middle" font-size="9">10kΩ</text>
+  <line x1="310" y1="270" x2="310" y2="255" stroke="#333" stroke-width="1"/>
+  <text x="310" y="252" text-anchor="middle" font-size="9" fill="#060">+5V</text>
+  <line x1="310" y1="317" x2="310" y2="340" stroke="#333" stroke-width="1"/>
+  <rect x="285" y="340" width="50" height="15" fill="white" stroke="#333" stroke-width="1.5" rx="2"/>
+  <text x="310" y="351" text-anchor="middle" font-size="9">1.5kΩ</text>
+  <line x1="310" y1="355" x2="310" y2="370" stroke="#333" stroke-width="1"/>
+  <line x1="303" y1="370" x2="317" y2="370" stroke="#333" stroke-width="1"/>
+  <line x1="305" y1="373" x2="315" y2="373" stroke="#333" stroke-width="0.7"/>
+  <line x1="308" y1="376" x2="312" y2="376" stroke="#333" stroke-width="0.5"/>
+  <text x="330" y="317" font-size="9" fill="#555">≈0.65V</text>
+
+  <line x1="350" y1="317" x2="590" y2="320" stroke="#060" stroke-width="1.5"/>
+  <text x="470" y="312" text-anchor="middle" font-size="9" fill="#060">G_rgb</text>
+
+  <line x1="770" y1="140" x2="770" y2="340" stroke="#00a" stroke-width="1.5"/>
+  <line x1="770" y1="340" x2="590" y2="340" stroke="#00a" stroke-width="1.5"/>
+  <text x="778" y="330" font-size="9" fill="#00a">G_tv (CN004)</text>
+
+  <!-- ============================================================ -->
+  <!-- CHANNEL B (y=460)                                            -->
+  <!-- ============================================================ -->
+
+  <rect x="10" y="445" width="70" height="24" fill="#e0e8ff" stroke="#00c" stroke-width="1.5" rx="3"/>
+  <text x="45" y="461" text-anchor="middle" font-size="11" fill="#00c" font-weight="bold">B IN</text>
+  <text x="45" y="474" text-anchor="middle" font-size="9" fill="#00c">0.7Vpp</text>
+
+  <line x1="80" y1="457" x2="130" y2="457" stroke="#00c" stroke-width="1.5"/>
+  <rect x="130" y="448" width="50" height="18" fill="white" stroke="#333" stroke-width="1.5" rx="2"/>
+  <text x="155" y="460" text-anchor="middle" font-size="10">75Ω</text>
+  <line x1="155" y1="466" x2="155" y2="485" stroke="#333" stroke-width="1"/>
+  <line x1="148" y1="485" x2="162" y2="485" stroke="#333" stroke-width="1"/>
+  <line x1="150" y1="488" x2="160" y2="488" stroke="#333" stroke-width="0.7"/>
+  <line x1="153" y1="491" x2="157" y2="491" stroke="#333" stroke-width="0.5"/>
+  <text x="155" y="500" text-anchor="middle" font-size="9" fill="#333">GND</text>
+
+  <line x1="180" y1="457" x2="210" y2="457" stroke="#00c" stroke-width="1.5"/>
+  <line x1="210" y1="442" x2="210" y2="472" stroke="#333" stroke-width="2"/>
+  <line x1="216" y1="442" x2="216" y2="472" stroke="#333" stroke-width="2"/>
+  <text x="213" y="438" text-anchor="middle" font-size="9">47µF</text>
+  <text x="213" y="484" text-anchor="middle" font-size="9">16V</text>
+
+  <line x1="216" y1="457" x2="310" y2="457" stroke="#00c" stroke-width="1.5"/>
+  <circle cx="310" cy="457" r="3" fill="#00c"/>
+  <line x1="310" y1="457" x2="310" y2="425" stroke="#333" stroke-width="1"/>
+  <rect x="285" y="410" width="50" height="15" fill="white" stroke="#333" stroke-width="1.5" rx="2"/>
+  <text x="310" y="421" text-anchor="middle" font-size="9">10kΩ</text>
+  <line x1="310" y1="410" x2="310" y2="395" stroke="#333" stroke-width="1"/>
+  <text x="310" y="392" text-anchor="middle" font-size="9" fill="#060">+5V</text>
+  <line x1="310" y1="457" x2="310" y2="480" stroke="#333" stroke-width="1"/>
+  <rect x="285" y="480" width="50" height="15" fill="white" stroke="#333" stroke-width="1.5" rx="2"/>
+  <text x="310" y="491" text-anchor="middle" font-size="9">1.5kΩ</text>
+  <line x1="310" y1="495" x2="310" y2="510" stroke="#333" stroke-width="1"/>
+  <line x1="303" y1="510" x2="317" y2="510" stroke="#333" stroke-width="1"/>
+  <line x1="305" y1="513" x2="315" y2="513" stroke="#333" stroke-width="0.7"/>
+  <line x1="308" y1="516" x2="312" y2="516" stroke="#333" stroke-width="0.5"/>
+  <text x="330" y="457" font-size="9" fill="#555">≈0.65V</text>
+
+  <line x1="350" y1="457" x2="590" y2="460" stroke="#00c" stroke-width="1.5"/>
+  <text x="470" y="452" text-anchor="middle" font-size="9" fill="#00c">B_rgb</text>
+
+  <line x1="790" y1="140" x2="790" y2="480" stroke="#00a" stroke-width="1.5"/>
+  <line x1="790" y1="480" x2="590" y2="480" stroke="#00a" stroke-width="1.5"/>
+  <text x="798" y="470" font-size="9" fill="#00a">B_tv (CN004)</text>
+
+  <!-- ============================================================ -->
+  <!-- CN004 INPUT HEADER (top right)                               -->
+  <!-- ============================================================ -->
+  <rect x="750" y="90" width="180" height="44" fill="#e8e8ff" stroke="#33a" stroke-width="1.5" rx="4"/>
+  <text x="840" y="108" text-anchor="middle" font-size="11" font-weight="bold" fill="#33a">A Board CN004</text>
+  <text x="840" y="124" text-anchor="middle" font-size="9" fill="#555">GND|B|G|R|GND|IK|9V</text>
+  <!-- lines going down from header -->
+  <line x1="750" y1="134" x2="750" y2="140" stroke="#00a" stroke-width="1.5"/>
+  <line x1="770" y1="134" x2="770" y2="140" stroke="#00a" stroke-width="1.5"/>
+  <line x1="790" y1="134" x2="790" y2="140" stroke="#00a" stroke-width="1.5"/>
+
+  <!-- ============================================================ -->
+  <!-- OUTPUTS from IC (right side → CN701)                         -->
+  <!-- ============================================================ -->
+  <!-- R out at y=225, G out at y=365, B out at y=502 — approximate "out" pins on right of IC -->
+  <!-- Actually IC right side x=750 -->
+
+  <!-- Output lines from IC right side -->
+  <!-- I'll put output nodes at x=750 for Y0-out, Y1-out, Y2-out -->
+  <!-- Channel R output: y=213 (midpoint between Y0-A=180 and Y0-B=200, plus a bit) -->
+  <!-- Let me use y=210 for R_out, y=350 for G_out, y=490 for B_out on right side -->
+
+  <line x1="750" y1="213" x2="850" y2="213" stroke="#c00" stroke-width="2"/>
+  <line x1="750" y1="353" x2="850" y2="353" stroke="#060" stroke-width="2"/>
+  <line x1="750" y1="493" x2="850" y2="493" stroke="#00c" stroke-width="2"/>
+
+  <!-- CN701 box -->
+  <rect x="850" y="170" width="130" height="360" fill="#fff0e0" stroke="#a60" stroke-width="2" rx="4"/>
+  <text x="915" y="195" text-anchor="middle" font-size="11" font-weight="bold" fill="#a60">CN701/CN004</text>
+  <text x="915" y="210" text-anchor="middle" font-size="9" fill="#555">cut + reconnect here</text>
+  <!-- Pin rows -->
+  <text x="858" y="240" font-size="10">pin2</text>
+  <text x="895" y="240" font-size="10" fill="#00c">B</text>
+  <line x1="850" y1="493" x2="840" y2="493" stroke="#00c" stroke-width="2"/>
+  <line x1="840" y1="493" x2="840" y2="237" stroke="#00c" stroke-width="2"/>
+  <line x1="840" y1="237" x2="850" y2="237" stroke="#00c" stroke-width="2"/>
+
+  <text x="858" y="270" font-size="10">pin3</text>
+  <text x="895" y="270" font-size="10" fill="#060">G</text>
+  <line x1="850" y1="353" x2="845" y2="353" stroke="#060" stroke-width="2"/>
+  <line x1="845" y1="353" x2="845" y2="267" stroke="#060" stroke-width="2"/>
+  <line x1="845" y1="267" x2="850" y2="267" stroke="#060" stroke-width="2"/>
+
+  <text x="858" y="300" font-size="10">pin4</text>
+  <text x="895" y="300" font-size="10" fill="#c00">R</text>
+  <line x1="850" y1="213" x2="850" y2="297" stroke="#c00" stroke-width="2"/>
+
+  <text x="858" y="330" font-size="10">pin1/5</text>
+  <text x="895" y="330" font-size="10">GND</text>
+  <text x="858" y="360" font-size="10">pin6</text>
+  <text x="895" y="360" font-size="10">IK</text>
+  <text x="858" y="390" font-size="10">pin7</text>
+  <text x="895" y="390" font-size="10" fill="#060">9V</text>
+  <text x="858" y="420" font-size="10" fill="#888">(IK+9V</text>
+  <text x="858" y="435" font-size="10" fill="#888">pass-thru)</text>
+
+  <!-- Arrow to C Board -->
+  <line x1="980" y1="330" x2="1100" y2="330" stroke="#a60" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="1040" y="320" text-anchor="middle" font-size="10" fill="#a60">→ C Board</text>
+  <text x="1040" y="345" text-anchor="middle" font-size="10" fill="#a60">IC751</text>
+
+  <!-- ============================================================ -->
+  <!-- BLANKING DETECT + MUX SELECT (bottom)                        -->
+  <!-- ============================================================ -->
+  <rect x="10" y="560" width="560" height="180" fill="#f8f8f8" stroke="#666" stroke-width="1.5" rx="4"/>
+  <text x="280" y="580" text-anchor="middle" font-size="12" font-weight="bold">Blanking Detection + Mux Select</text>
+
+  <!-- Fast blanking input -->
+  <rect x="20" y="590" width="90" height="22" fill="#ffe8ff" stroke="#808" stroke-width="1" rx="2"/>
+  <text x="65" y="605" text-anchor="middle" font-size="10" fill="#808">FBLK (SCART 16)</text>
+
+  <!-- Wire to base resistor -->
+  <line x1="110" y1="601" x2="150" y2="601" stroke="#808" stroke-width="1.5"/>
+  <rect x="150" y="594" width="40" height="14" fill="white" stroke="#333" stroke-width="1.5" rx="2"/>
+  <text x="170" y="604" text-anchor="middle" font-size="9">10kΩ</text>
+
+  <!-- BC547 transistor symbol -->
+  <line x1="190" y1="601" x2="220" y2="601" stroke="#808" stroke-width="1.5"/>
+  <!-- transistor body -->
+  <line x1="220" y1="585" x2="220" y2="620" stroke="#333" stroke-width="2"/>
+  <!-- base -->
+  <line x1="190" y1="601" x2="220" y2="601" stroke="#333" stroke-width="1.5"/>
+  <!-- collector -->
+  <line x1="220" y1="590" x2="240" y2="578" stroke="#333" stroke-width="1.5"/>
+  <!-- emitter -->
+  <line x1="220" y1="612" x2="240" y2="624" stroke="#333" stroke-width="1.5"/>
+  <!-- arrow on emitter -->
+  <polygon points="232,618 240,624 234,628" fill="#333"/>
+  <text x="225" y="575" font-size="9">BC547</text>
+
+  <!-- Collector up to 5V via 10kΩ -->
+  <line x1="240" y1="578" x2="240" y2="555" stroke="#333" stroke-width="1"/>
+  <rect x="218" y="540" width="44" height="14" fill="white" stroke="#333" stroke-width="1.5" rx="2"/>
+  <text x="240" y="550" text-anchor="middle" font-size="9">10kΩ</text>
+  <line x1="240" y1="540" x2="240" y2="530" stroke="#333" stroke-width="1"/>
+  <text x="240" y="527" text-anchor="middle" font-size="9" fill="#060">+5V</text>
+
+  <!-- Emitter to GND -->
+  <line x1="240" y1="624" x2="240" y2="640" stroke="#333" stroke-width="1"/>
+  <line x1="233" y1="640" x2="247" y2="640" stroke="#333" stroke-width="1"/>
+  <line x1="235" y1="643" x2="245" y2="643" stroke="#333" stroke-width="0.7"/>
+  <line x1="238" y1="646" x2="242" y2="646" stroke="#333" stroke-width="0.5"/>
+
+  <!-- Pull-down on base node -->
+  <line x1="205" y1="601" x2="205" y2="625" stroke="#333" stroke-width="1"/>
+  <rect x="183" y="625" width="44" height="14" fill="white" stroke="#333" stroke-width="1.5" rx="2"/>
+  <text x="205" y="635" text-anchor="middle" font-size="9">10kΩ</text>
+  <line x1="205" y1="639" x2="205" y2="650" stroke="#333" stroke-width="1"/>
+  <line x1="198" y1="650" x2="212" y2="650" stroke="#333" stroke-width="1"/>
+  <line x1="200" y1="653" x2="210" y2="653" stroke="#333" stroke-width="0.7"/>
+  <line x1="203" y1="656" x2="207" y2="656" stroke="#333" stroke-width="0.5"/>
+  <text x="205" y="665" text-anchor="middle" font-size="9">GND</text>
+
+  <!-- Collector output = S signal -->
+  <line x1="260" y1="578" x2="320" y2="578" stroke="#555" stroke-width="1.5"/>
+  <text x="290" y="572" text-anchor="middle" font-size="9" fill="#555">HIGH=RGB / LOW=TV</text>
+
+  <!-- SP3T switch -->
+  <rect x="320" y="562" width="120" height="70" fill="#fff8e0" stroke="#880" stroke-width="1.5" rx="3"/>
+  <text x="380" y="580" text-anchor="middle" font-size="10" font-weight="bold" fill="#880">SP3T Switch</text>
+  <text x="380" y="596" text-anchor="middle" font-size="9">AUTO → collector</text>
+  <text x="380" y="610" text-anchor="middle" font-size="9">RGB  → 5V (force)</text>
+  <text x="380" y="624" text-anchor="middle" font-size="9">TV   → GND (force)</text>
+
+  <!-- Wire from switch to IC S pin -->
+  <line x1="440" y1="597" x2="530" y2="597" stroke="#555" stroke-width="1.5"/>
+  <text x="485" y="590" text-anchor="middle" font-size="9" fill="#555">→ IC S pin</text>
+
+  <!-- S pin line going up to IC -->
+  <line x1="530" y1="597" x2="530" y2="558" stroke="#555" stroke-width="1.5"/>
+  <line x1="530" y1="558" x2="670" y2="558" stroke="#555" stroke-width="1.5"/>
+  <line x1="670" y1="558" x2="670" y2="585" stroke="#555" stroke-width="1.5"/>
+  <!-- enter IC at bottom -->
+  <line x1="660" y1="585" x2="680" y2="585" stroke="#555" stroke-width="1"/>
+  <text x="670" y="582" text-anchor="middle" font-size="8" fill="#555">S</text>
+
+  <!-- ============================================================ -->
+  <!-- VCC DECOUPLING (top right area)                              -->
+  <!-- ============================================================ -->
+  <rect x="1020" y="90" width="150" height="110" fill="#f0fff0" stroke="#383" stroke-width="1.5" rx="4"/>
+  <text x="1095" y="110" text-anchor="middle" font-size="11" font-weight="bold" fill="#383">VCC Decoupling</text>
+  <text x="1095" y="128" text-anchor="middle" font-size="10">100nF ceramic</text>
+  <text x="1095" y="144" text-anchor="middle" font-size="10">+ 10µF electrolytic</text>
+  <text x="1095" y="160" text-anchor="middle" font-size="10">VCC→GND, close to IC</text>
+  <text x="1095" y="178" text-anchor="middle" font-size="10" fill="#060">5V from IC604 pin3</text>
+  <text x="1095" y="192" text-anchor="middle" font-size="10" fill="#888">(KIA7805API)</text>
+
+  <!-- ============================================================ -->
+  <!-- NOTES                                                         -->
+  <!-- ============================================================ -->
+  <rect x="10" y="750" width="1160" height="58" fill="#fffef0" stroke="#aaa" stroke-width="1" rx="3"/>
+  <text x="20" y="768" font-size="10" fill="#333">Notes: Cut CN004↔CN701 cable. Insert mod board in series. MUX selects RGB source vs A Board TV signal per-channel.</text>
+  <text x="20" y="784" font-size="10" fill="#333">Ron(74HCT4053)≈80–120Ω — attenuation ~6% with 1.7kΩ load (R752+R757 on C Board). Acceptable.</text>
+  <text x="20" y="800" font-size="10" fill="#c00">⚠ HV safety: discharge CRT anode (25kV) with 10MΩ 2W resistor before working inside chassis.</text>
+
+  <!-- ============================================================ -->
+  <!-- ARROWHEAD MARKER                                             -->
+  <!-- ============================================================ -->
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#a60"/>
+    </marker>
+  </defs>
+
+</svg>

@@ -1,0 +1,47 @@
+                                                                                                                                     KV-21FS140
+      ITEM INFORMATION
+      No. OPB1
+       Item                 Speed Search              Home         Wide         M           B/G           I          D/K       DEC
+                                                     Theatre      Screen
+       KV-21FS140           0             1              0             0        1            0           0             0       72
+
+                        SPEED SEARCH (Time of speed search)                         00 = disabled (original cycle speed)
+                                                                                    01 = 4 time speed from the original
+                                                                                    10 = 6 time speed from the original
+                                                                                    11 = 8 time speed from the original
+                        Home Theatre                                                 1 = Home Theatre mode available
+                        Wide Screen                                                  1 = Wide Screen model
+                        TV System Selection          (M,B/G, I, D/K)                 0 = disabled, 1 = enabled
+
+
+       No. OPB2
+
+       Item               Party Mode          FM Radio       Component      Composite         SECAM           Color Decoding   DEC
+                                                                             (SCART)
+       KV-21FS140                0               0                 1        0         1           0             1          1   43
+
+
+                    Party Mode         Party Mode Function                 0 = not available, 1 = available
+                    FM Radio           FM Radio Function                   0 = not available, 1 = available
+                    Component          (Component [YCbCr] Terminals)       0 = not available, 1 = available
+                    Composite          (No. of Composite Terminals)        00 = 1 composite terminal
+                                                                           01 = 2 composite terminals
+                                                                           10 = 3 composite terminals
+                                                                           11 = 4 composite terminals
+                                                                                 (BX1L FULL only)
+                    SECAM              (SECAM Color System)                0 = disabled,      1 = enabled
+                    Color decoding     (Color Crystal Selection)           00 = PAL/NTSC (Multi)
+                                                                           01 = NTSC (3.58MHz)
+                                                                           10 = PAL/NTSC (4.43MHz)
+                                                                           11 = PAL/NTSC (Tri-Norma)
+
+
+
+
+      KV-21FS140                                                                                                                            32
+
+
+
+
+Downloaded from www.Manualslib.com manuals search engine
+

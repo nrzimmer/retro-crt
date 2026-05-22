@@ -1,0 +1,67 @@
+                                                                                                                                                                                                                                                                                                                                                                                            KV-21FS140
+        TVJ              Functionality               Init.     Range                              Function                                             Table & Note                    Device Name       Common                                                                                    Initial Value (Detailed)
+                                                                                                                                                                                                                      Col Temp           Col Temp       Col Temp         Col Temp           Col Temp             Col Temp     YUV   Pic mode 0   Pic mode 1 Pic mode 2       TV    Video
+      Category          No.           Name           Dec         Dec                                                                                                                                                (COOL other)       (WARM other)    (NEUTRAL        (COOL YUV)         (WARM YUV)            (NEUTRAL
+                                                                                                                                                                                                                                                         other)                                                   YUV)
+    WHBL                000           BKOR           031         063     Black Level Offset R (OFB = 00), Offset B (OFB = 01)         col temp (HIGH/LOW/Normal)*(UV/RGB/Others)       TV-Processor                          31             31               31              31                 31                   31
+                        001           BKOG           031         063     Black Level Offset G                                         col temp (HIGH/LOW/Normal)*(UV/RGB/Others)                                             31             31               31              31                 31                   31
+                        0 02          RDRV           037         063     White Point R                                                col temp (HIGH/LOW/Normal)*(UV/RGB/Others)       TV-Processor                          37            37                37              37                 37                  37
+                        0 03          GDRV           037         063     White Point G                                                col temp (HIGH/LOW/Normal)*(UV/RGB/Others)                                             37            37                37              37                 37                  37
+                        004           BDRV           037         063     White Point B                                                col temp (HIGH/LOW/Normal)*(UV/RGB/Others)                                             37            37                37              37                 37                  37
+                        005           LPG            00 0        001     RGB Gain Preset                                                                   none                                            01
+                        006           PGR            031         127     Preset Gain R (PGR)                                                               none                                            40
+                        007           PGG            031         127     Preset Gain G (PGG)                                                               none                                            40
+                        008           PGB            031         127     Preset Gain B (PGB)                                                               none                                            40
+                        009           GNOF           000         015     Preset Gain Offset                                                                none                          CCC loop          15
+                        010           SBRT           031         063     Sub-Brightness                                                               Others/RGB/YUV                                                                                                                                                           31                                            31        31
+                        011           SBRO           000         003     Sub-Brightness Offset (Intelligent Pic)                                           none                                            02
+                        012           EGL            000         001     Enable Gain Loop in CCC System                                                    none                                            00
+                        013           SGL            000         003     Selection of High Current in CCC System                                           none                                            00
+                        014           AKB            000         001     Black Current Stabilization                                                       none                                            00
+                        015           CBS            000         001     Control Sequence of Beam Current Limiting                                         none                                            00
+                        016           RGBB           000         003     RGB Blanking                                                                      none                                            00
+                        017           BLBG           000         001     Blanking of Blue & Green Output                                                   none                                            00
+                        018           OFB            000         001     Black Level Offset Blue                                                           none                                            01
+                        019           NSBR           000         015     Non Standard Brightness Offset                                                    none                                            00
+                        020           WBP            000         003     Color Temp Setting (0:High, 1:Normal, 2,3:Low)                                Picture Mode                                                                                                                                                                     00            01           01
+
+
+
+
+       T VJ      Functionality        Init.   R ang e                          Function                                              Table & Note                       Device Name    Common                                                                                          Initial Value (Detailed)
+                                                                                                                                                                                                YUV       50 pal    50 pal    50 Secam    50 Secam    60TV      60    50YUV 60YUV 50RGB 60RGB                     Pic mode Pic mode Pic mode     TV        Video   TV Wide Video Wide
+     Category    N o.      Name       Dec      Dec                                                                                                                                                         (T V)   (Video)       (TV)      (Video)            (Video)                                                 0        1        2                           (4:3)     (4:3)
+    SADJ         000       PMAX       063      063       Picture Maximum                                             (TV / Video)*(Normal / Wide) / <Normal / Wide>     TV-Processor                                                                                                                                                             37         37          37        37
+                 001       SHUE       00 7     015       Sub-Hue                                                                      TV / Video                                                                                                                                                                                                 07         07
+                 002       SS H P     015      063       Sub-Sharpness                                                             TV / Video / YUV                                                 42                                                                                                                                           40         42
+                 003       SSHO       000      007       Sub-Sharpness Offset (Intelligent Pic)                                          none                                            06
+                 004       SC O L     031      063       Sub-Color                                                 50pal(tv)/50pal(video)/50secam(tv)/50secam(video)/
+                                                                                                                                                                                                           00        31           00         31        31         31    00        31          00          31
+                                                                                                                      60TV/60video/50YUV/60YUV/50RGB/60RGB
+                 005       SCOO       000      003       Sub-Color Offset (Intelligent Pic)                                              none                                            02
+                 006           PIC    031      127       Picture Control [GA:0~100(valid); >100(invalid);            Picture Model(GA: Personal = User Reset Data)
+                                                                                                                                                                                                                                                                                                                    100       80       80
+                                                         Others:0~63(valid); ignore bit 6(invalid)]
+                 00 7          C OL   031      127       Color Control [GA:0~100(valid); >100(invalid);              Picture Model(GA: Personal = User Reset Data)
+                                                                                                                                                                                                                                                                                                                     96       50       50
+                                                         Others:0~63(valid); ignore bit 6(invalid)]
+                 008           BRT    031      127       Brightness Control [GA:0~100(valid); >100(invalid);         Picture Model(GA: Personal = User Reset Data)
+                                                                                                                                                                                                                                                                                                                     50       50       50
+                                                         Others:0~63(valid); ignore bit 6(invalid)]
+                 009           HUE    03 1     127       Hue Control [GA:0~100(valid); >100(invalid);                Picture Model(GA: Personal = User Reset Data)
+                                                         Others:0~63(valid); ignore bit 6(invalid)]                                                                                                                                                                                                                  50       50       50
+                                                         (*Send to TINT #1Eh(5-0) with US model)
+                 010           S HP   031      127       Sharpness Control [GA:0~100(valid); >100(invalid);          Picture Model(GA: Personal = User Reset Data)
+                                                                                                                                                                                                                                                                                                                     60       50       50
+                                                         Others:0~63(valid); ignore bit 6(invalid)]
+
+
+
+
+    KV-21FS140                                                                                                                                                                                                                                                                                                                                                                                    21
+
+
+
+
+Downloaded from www.Manualslib.com manuals search engine
+
