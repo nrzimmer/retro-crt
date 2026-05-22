@@ -1,0 +1,95 @@
+KV-21FS140
+RM-YA005
+
+4-3-7. A Board — (Block 007)
+1
+
+2
+
+3
+
+4
+
+A
+
+A
+
+B
+
+HS-A007
+003:5E
+
+Mount Mecha A001 409311801
+
+Q805
+
+Mount Mecha A002 409358501
+
+IC606
+
+Mount Mecha A003 409312201
+
+IC604
+
+Mount Mecha A004 409312201
+
+IC603
+
+Mount Mecha A005 409312201
+
+IC602
+
+Mount Mecha A006 409358401
+
+IC804
+
+Mount Mecha A007 409447401
+
+IC601
+
+Mount Mecha*A008 409888201
+
+IC200
+
+B
+
+Mount Mecha*A009 409500101 XX IC200
+Mount Mecha*A010 409311701 XX IC200
+
+C
+
+Mount Mecha A011 410262101
+
+IC001
+
+Mount Mecha A012 410268301
+
+CLP001
+
+Mount Mecha A015 405530402
+
+D914 HOLDER
+
+Mount MechaA016
+
+C
+
+410268311
+
+Mount Mecha*A017 410268301 XX
+Mount Mecha A018 410268311
+Mount Mecha*A019 410268301 XX
+
+A
+(Block 007)
+Heat Sink
+
+B-BX1S(05)13107-...-A..(Block 007)-21FS140
+
+D
+
+D
+
+– 44 –
+
+

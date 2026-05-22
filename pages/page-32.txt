@@ -1,0 +1,142 @@
+KV-21FS140
+RM-YA005
+
+4-2. CIRCUIT BOARDS LOCATION
+
+C Board
+
+A Board
+
+4-3.
+
+SCHEMATIC DIAGRAM INFORMATION
+
+Note:
+• All capacitors are in µF unless otherwise noted.
+• All electrolytic capacitors are rated at 50V unless otherwise
+noted.
+• All resistors are in ohms.
+kΩ = 1000Ω, MΩ = 1000kΩ
+• Indication of resistance which does not have rating
+electrical power is as follows.
+
+Reference information
+RESISTOR
+: RN
+: RC
+: FPRD
+: FUSE
+: RS
+: RB
+: RW
+
+Pitch: 5 mm
+Rating electrical power 1/4W (CHIP: 1/10W)
+: nonflammable resistor.
+
+•
+•
+•
+•
+•
+•
+
+•
+•
+•
+•
+•
+•
+•
+•
+•
+
+: fusible resistor
+: internal component.
+: panel designation or adjustment for repair.
+All variable and adjustable resistors have characteristic curve B
+unless otherwise noted.
+Readings are taken with a color-bar signal input.
+no mark
+: Common
+(
+)
+: PAL
+[
+]
+: NTSC 3.58
+Readings are taken with a 10 MΩ digital multimeter.
+Voltage are dc with respect to ground unless otherwise
+noted.
+Voltage variations may be noted due to normal
+production tolerances.
+All voltage are in Volt.
+✽
+: Cannot be measured.
+Circled numbers are waveform references.
+: B +bus.
+: B –bus.
+k : signal path.
+
+COIL
+CAPACITOR
+
+¢
+
+Note: The reference number which starts with Wxxx
+(eg: W003) indicates a wire to wire connection.
+Note: Components marked as XX are not fitted on this
+model.
+
+– 31 –
+
+Note:
+
+:✽
+: LF-8L
+: TA
+: PS
+: PP
+: PT
+: MPS
+: MPP
+: ALB
+: ALT
+: ALR
+
+METAL FILM
+SOLID
+NONFLAMMABLE CARBON
+NONFLAMMABLE FUSIBLE
+NONFLAMMABLE METAL
+OXIDE
+NONFLAMMABLE CEMENT
+NONFLAMMABLE
+WIREWOUND
+ADJUSTMENT RESISTOR
+MICRO INDUCTOR
+TANTALUM
+STYROL
+POLYPROPYLENE
+MYLAR
+METALIZED POLYESTER
+METALIZED POLYPROPYLENE
+BIPOLAR
+HIGH TEMPERATURE
+HIGH RIPPLE
+
+The component identified by shading and
+mark ! are critical for safety. Replace only with
+part number specified.
+
+Note: “A” board schematic diagram is divided into 7 blocks.
+Each block is named by its function and block “number”.
+eg: Processor (Block 001)
+Joint connection between boards can be identified using
+the block number followed by the grid's guide.
+eg: -<PWR-OFF MUTE
+002 : 4E
+Meaning: Block 001 joint "PWR-OFF MUTE" is connected
+to Block 002 joint "PWR-OFF MUTE" located at grid 4E.
+
+

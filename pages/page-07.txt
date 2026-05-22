@@ -1,0 +1,77 @@
+KV-21FS140
+RM-YA005
+
+1-6. PICTURE TUBE REMOVAL
+Note:
+• Please make sure the TV set is not in standing position before removing necessary CRT support located on bottom right
+and left.
+1) Remove the Rear Cover.
+2) Unplug all interconnecting leads from the Deflection Yoke, Neck Assy, Degaussing Coils and CRT grounding strap. Remove
+Chassis Assy.
+3) Place the TV set with the CRT face down on a cushion (jig).
+4 Anode Cap Removal
+qd Screw (5), Tapping (x4)
+8 Band, DGC Removal
+0 Degaussing Coil
+6 Loosen the Neck Assembly
+fixing screw and removal
+
+9 Holder, DGC
+Removal (x2)
+qa Earth Coating Assy
+
+5 C Board Removal
+
+qs Spring Tension Removal (x2)
+qf Supports, CRT
+Removal (x2)
+7 Loosen the Deflection Yoke
+fixing screw and remove
+
+• REMOVAL OF ANODE-CAP
+Note:
+• After removing the anode, short circuit the anode of the picture tube and the anode cap to the metal chassis, CRT shield or
+carbon paint on the CRT.
+
+•
+
+REMOVING PROCEDURES
+
+C
+
+A
+Anode Button
+
+3 When one side of the rubber cap is separated from the
+anode button, the anode-cap can be removed by turning
+up the rubber cap and pulling it up in the direction of the
+arrow c.
+
+A
+
+1 Turn up one side of the rubber cap in the direction
+indicated by the arrow a.
+
+•
+
+HOW TO HANDLE AN ANODE-CAP
+
+1 Do not damage the surface of anode-caps with sharp
+shaped objects.
+2 Do not press the rubber too hard so as not to damage
+the inside of anode-cap.
+A metal fitting called the shatter-hook terminal is built
+into the rubber.
+3 Do not turn the foot of rubber over too hard.
+The shatter-hook terminal will stick out or damage the
+rubber.
+
+B
+B
+
+2 Using a thumb pull up the rubber cap firmly in the direction
+indicated by the arrow b.
+
+–6–
+
+

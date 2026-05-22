@@ -1,0 +1,597 @@
+Range
+
+Name
+
+Dec
+
+Dec
+
+PIP
+
+000
+
+HPS
+
+051
+
+255
+
+001
+
+VPS
+
+027
+
+255
+
+Vertical Picture Position
+
+002
+
+VFP
+
+008
+
+015
+
+Vertical Fine Position
+
+Function
+
+Device Name
+
+Common
+
+Initial Value (Detailed)
+(4.3) 50
+
+Horizontal Picture Position
+
+003
+
+HFP
+
+015
+
+015
+
+Horizontal Fine Position
+
+004
+
+VSP
+
+000
+
+001
+
+Vertical Sync Pulse Noise Reduction
+
+005
+
+VDL
+
+000
+
+031
+
+Vertical Sync Pulse Delay
+
+006
+
+DLY
+
+001
+
+015
+
+Select Delay
+
+007
+
+AGV
+
+011
+
+015
+
+Automatic Gain Control Value
+
+008
+
+CPD
+
+000
+
+003
+
+Clamping Duration
+
+009
+
+PLL
+
+000
+
+003
+
+Insert PLL time Constant
+
+010
+
+YCD
+
+012
+
+015
+
+Y/C Delay
+
+011
+
+KIL
+
+000
+
+003
+
+Color killer Threshold
+
+012
+
+BGP
+
+000
+
+001
+
+Burst Gate Position
+Deemphase Selection
+
+013
+
+DEM
+
+001
+
+003
+
+014
+
+CMA
+
+001
+
+003
+
+Chroma Bandwitch
+
+015
+
+IFC
+
+002
+
+003
+
+IF Compensation Filter
+HUE Control
+
+016
+
+HUE
+
+032
+
+063
+
+017
+
+SCA
+
+006
+
+031
+
+Color Subcarrier Adjustment
+
+018
+
+CON
+
+000
+
+015
+
+Contrast Adjustment
+
+019
+
+BRT
+
+000
+
+015
+
+Brightness Adjustment
+
+020
+
+PKR
+
+133
+
+255
+
+Peak Level Red
+
+021
+
+PKG
+
+133
+
+255
+
+Peak Level Green
+
+022
+
+PKB
+
+133
+
+255
+
+Peak Level Blue
+
+– 20 –
+
+023
+
+FRY
+
+015
+
+015
+
+Frame Color Y
+
+024
+
+SAT
+
+007
+
+015
+
+Color Saturation Adjustment
+
+025
+
+YPK
+
+003
+
+007
+
+Y Peaking Adjustment
+
+026
+
+YCO
+
+001
+
+001
+
+Y Coring Enable
+
+027
+
+P21
+
+000
+
+007
+
+PALIDL 2 and PALIDL 1
+
+028
+
+PAL
+
+000
+
+001
+
+PAL ID Level
+
+029
+
+POV
+
+000
+
+007
+
+Position Offset Vertical
+
+030
+
+POH
+
+016
+
+031
+
+Position Offset Horizontal
+Clamping Pulse Length
+
+031
+
+CPL
+
+001
+
+003
+
+032
+
+SRL
+
+000
+
+003
+
+Secam Rejection Level
+
+033
+
+SIL
+
+007
+
+007
+
+Secam Identification Level
+
+034
+
+SED
+
+001
+
+001
+
+Secam divider
+
+035
+
+BFA
+
+001
+
+001
+
+Bellfilter Adjustment
+
+036
+
+P12
+
+000
+
+003
+
+PAL Increment 1 and 2
+
+037
+
+LOS
+
+001
+
+003
+
+Locking Speed
+
+038
+
+SAL
+
+000
+
+007
+
+Secam Acceptance Level
+
+039
+
+SEA
+
+000
+
+001
+
+Secam Acceptance
+
+040
+
+NSR
+
+000
+
+007
+
+Noise Reduction For Horizontal PLL
+
+041
+
+SLH
+
+000
+
+003
+
+Slicing Level Threshold H
+I-adjustment For Horizontal PLL
+
+042
+
+IAJ
+
+000
+
+003
+
+043
+
+V50
+
+000
+
+127
+
+Vertical Window Noise Suppression Opening 50 Hz
+
+044
+
+V60
+
+032
+
+127
+
+Vertical Window Noise Suppression Opening 60 Hz
+
+045
+
+VNS
+
+000
+
+015
+
+Vertical Window Noise Suppression Closing 60 Hz
+
+046
+
+VSC
+
+000
+
+015
+
+Vertical Window Noise Suppression Closing 50 Hz
+Slicing Level Threshold V Polarity & SLTV
+
+047
+
+SVT
+
+015
+
+015
+
+048
+
+VFM
+
+000
+
+003
+
+Vertical Flywheel Mode
+
+049
+
+VFW
+
+000
+
+001
+
+Vertical Flywheel
+
+050
+
+LVS
+
+000
+
+003
+
+Lowpass for Vertical Sync-separation
+
+051
+
+CLA
+
+003
+
+003
+
+Clamping latency
+
+052
+
+SCP
+
+004
+
+031
+
+Start of Clamping Pulse
+
+(For PIP model only)
+
+Table & Note
+
+SDA9288X
+
+50/60 Hz (Sub Pic)
+
+TV/Video
+
+TV/Video
+
+TV/Video
+
+(4:3) 60
+
+(16:9) 50WZ
+
+(16:9) 60WZ
+
+(16:9) 50N (16:9) 60N (16:9) 50F
+
+(16:9) 60F
+
+(16:9) 50Z
+
+(16:9) 60Z
+
+Sub 50Hz
+
+Sub 60Hz
+
+TV
+
+Video
+
+RM-YA005
+
+Init.
+
+No.
+
+TVJ
+
+KV-21FS140
+
+Functionality
+
+Category
+
+

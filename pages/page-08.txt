@@ -1,0 +1,117 @@
+KV-21FS140
+RM-YA005
+
+SECTION 2
+SET-UP ADJUSTMENTS
+The following adjustments should be made when a complete
+realignment is required or a new picture tube is installed.
+The controls and switch should be set as follows unless
+otherwise noted:
+Picture control ......................................................... NORMAL
+Brightness control ................................................... NORMAL
+
+Perform the adjustments in order as follows:
+1. Beam Landing
+2. Convergence
+3. Focus
+4. G2 (SCREEN)
+5. White Balance
+Note: Test Equipment Required
+5. Oscilloscope
+1. Pattern Generator
+6. Landing Checker
+2. Degausser
+7. XCV Adjuster
+3. DC Power Supply
+4. Digital Multimeter
+
+...................................................................................................................................................................................................................... ...........
+
+Preparation :
+• Feed in the white pattern signal.
+• Before starting, degauss the entire screen with the
+degausser.
+• In order to reduce the geomagnetism on the set's
+picture tube, face it east or west.
+
+7. When the position of the DY is determined, tighten it
+with the DY mounting screw.
+8. If the beam does not land correctly in all corners of the
+screen, use magnet disc to correct it.
+Purity control
+corrects this area.
+
+2-1. BEAM LANDING ADJUSTMENT
+
+b
+
+a
+
+1. Input a raster signal with the pattern generator.
+2. Loosen the deflection yoke mounting screw, and set the
+purity control to the center as shown below.
+
+c
+
+d
+
+Disc magnets or rotatable
+disc magnets correct these
+areas (a-d).
+
+Deflection yoke positioning
+corrects these areas.
+
+Purity control
+
+b
+c
+
+a
+d
+
+3. Set the raster signal of the pattern generator to green.
+4. Move the deflection yoke (DY) backward and adjust the
+purity control so that green is in the center and blue and
+red are at the sides evenly.
+
+Blue
+Red
+
+2-2. CONVERGENCE ADJUSTMENT
+Preparation :
+• Before starting, perform FOCUS adjustment.
+• Picture mode STANDARD.
+• Receive dot/cross hatch pattern.
+
+a) Vertical Static Convergence
+
+Green
+
+Center dot
+
+R
+G
+B
+
+R
+
+G
+
+B
+
+5. Then move the DY forward and adjust so that the entire
+screen becomes green.
+4 pole magnet
+
+RV750
+H. STAT
+
+C/CV Board
+
+6. Now switch over raster signal to red then blue and
+confirm the condition.
+
+–7–
+
+
