@@ -1,7 +1,7 @@
 # Consoles — Mods Internos
 
 Mods de hardware nos consoles para habilitar ou melhorar saída RGB/áudio.  
-Cabos SCART correspondentes estão em [`../scart/cables/`](../scart/cables/).
+Cabos SCART correspondentes estão em [`scart/cables/`](../scart/cables/).
 
 | Pasta | Console | Mods documentados |
 |-------|---------|-------------------|
