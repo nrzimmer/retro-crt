@@ -69,6 +69,18 @@ O LED bicolor (D914 SPB-25MVWF, controlado por Q006/Q007) exibe códigos de erro
 | T801 | FBT Flyback | NX-4751//M3A4 |
 | IC804 | Vertical IC | STV9302A (part Sony) |
 
+## Diferença entre variantes — acesso ao diagnóstico
+
+> ⚠️ A sequência de acesso difere entre os manuais:
+>
+> | Variante | Diagnóstico | Service Mode |
+> |----------|-------------|--------------|
+> | **rev_brazil** (SCC-S80A-A) | `[DISPLAY]→[5]→[VOL+]→[POWER]` | `[DISPLAY]→[5]→[VOL+]→[POWER]` |
+> | **rev_s79aa** (SCC-S79A-A/B) | `[DISPLAY]→[5]→[VOL-]→[POWER]` | `[DISPLAY]→[5]→[VOL+]→[POWER]` |
+>
+> No S79AA, VOL- acessa diagnóstico e VOL+ acessa service mode.  
+> No Brazil, VOL+ acessa ambos (a distinção é o momento — standby vs ligada).
+
 ## Resistores fusíveis (FPRD) — verificar antes de substituir outros componentes
 
 | Ref | Valor | Localização | Função |

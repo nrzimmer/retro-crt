@@ -2,11 +2,15 @@
 
 **Schematic:** página 34 | **Manual:** páginas 34–35
 
-## IC Principal: IC200 AN5276T
+## IC Principal: IC200 AN5276T / AN17804A
+
+> **Diferença entre variantes:**  
+> - **rev_brazil:** documenta AN5276T  
+> - **rev_s79aa:** documenta AN5276T **ou** AN17804A como alternativas — ambas podem estar instaladas dependendo da revisão da placa
 
 | Campo | Valor |
 |---|---|
-| Tipo | AN5276T |
+| Tipo | AN5276T (rev_brazil) / AN5276T ou AN17804A (rev_s79aa) |
 | Função | AUDIO AMP — amplificador de áudio estéreo de saída para alto-falantes |
 | Alimentação | 9V |
 | Socket | J200 (177078631) |

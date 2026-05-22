@@ -44,6 +44,11 @@
 | HSIZ (005) — largura | 16.4 cm | 14.6 cm | 15.3 cm |
 | VSIZ (011) — altura | 12.4 cm | 11.3 cm | 11.5 cm |
 
+## Diferença entre variantes — modos de geometria
+
+> **rev_brazil (SCC-S80A-A):** 4 modos — PAL 50Hz Normal, PAL 50Hz Wide, NTSC 60Hz Normal, NTSC 60Hz Wide  
+> **rev_s79aa (SCC-S79A-A/B):** 2 modos — NTSC 60Hz Normal, NTSC 60Hz Wide apenas (modelo NTSC-only, sem PAL)
+
 ## Sequência de ajuste — PAL 50Hz Normal
 
 1. **VPOS (013)** — posicionar centro vertical
@@ -59,6 +64,14 @@
 11. **SCOR (012)** — S-correction
 12. **VLIN (003)** — linearidade vertical
 13. **VSCR (004)** — scroll vertical (não copiar entre modos)
+
+## Sequência de ajuste — NTSC 60Hz Normal (rev_s79aa)
+
+Mesma ordem de itens GEOM que o PAL, com alvos NTSC:
+
+VPOS → VSIZ → HPOS → EWTZ → HSIZ → HBOW → EWPW → UCOP → LCOP → HPAR → SCOR → VLIN → VSCR
+
+Alvos: VSIZ = 11.5 cm (NTSC mono) | HSIZ = 15.3 cm (NTSC mono)
 
 ## Fluxo de trabalho para todos os 4 modos
 

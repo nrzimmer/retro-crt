@@ -228,6 +228,29 @@ Bytes de opção que definem as características do modelo por destino de mercad
 
 ---
 
+## Diferenças entre variantes — valores de configuração
+
+### Parâmetros que diferem por destino
+
+| Categoria | Item | Nome | rev_brazil (SCC-S80A-A) | rev_s79aa (SCC-S79A-A/B) |
+|-----------|------|------|------------------------|--------------------------|
+| SYNC | 006 | FORF | 00 (Brazil) | 01 (Latin) |
+| OPTM | 007 | LANG | 02 (Português) | 01 (Latin) |
+| OPUS | 001 | SPCH | 05 (Brazil) | 06 (Latin) |
+
+### Option Bytes — valores por variante
+
+| Byte | rev_brazil | rev_s79aa | Diferença |
+|------|-----------|-----------|-----------|
+| OPB1 | 72 | 72 | Igual |
+| OPB2 | 43 | 43 | **Interpretação diferente:** Brazil = PAL/NTSC multi; S79AA = NTSC only |
+| OPB3 | 4 | 4 | Igual (US Stereo habilitado) |
+| OPB4 | 0 | 0 | Igual |
+| OPB5 | 3 | 3 | Igual |
+| OPB6 | 5 | 5 | Igual |
+
+> OPB2 DEC=43 representa bits diferentes nos dois modelos porque o mapa de bits de sistema de cor difere entre versões de firmware Brazil vs Latin. O valor decimal é o mesmo mas o comportamento efetivo é diferente — Brazil aceita PAL; S79AA só decodifica NTSC.
+
 ## Notas gerais
 
 - Dados após "/" na tabela oficial referem-se a modelos NTSC. Sem "/" = comum a todos.
