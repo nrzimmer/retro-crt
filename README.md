@@ -5,10 +5,9 @@ Documentação para uso e modificação de TV CRT Sony Trinitron KV-21FS140 com 
 ## Estrutura
 
 ```
-crt/
-├── tv/          — tudo sobre a KV-21FS140 (manuais, circuitos, mod, reparo)
-├── scart/       — padrão SCART, switches, cabos por console
-└── consoles/    — mods internos dos consoles (RGB, áudio, etc.)
+tv/          — tudo sobre a KV-21FS140 (manuais, circuitos, mod, reparo)
+scart/       — padrão SCART, switches, cabos por console
+consoles/    — mods internos dos consoles (RGB, áudio, etc.)
 ```
 
 | Pasta | Conteúdo |
