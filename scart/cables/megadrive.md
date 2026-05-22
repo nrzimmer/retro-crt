@@ -30,7 +30,7 @@ Pin 1  (Audio mono) ────────────────────
 Pin 2  (GND) ────────────────────────────────►  Pins GND
 ```
 
-> MD1 só tem áudio mono pelo DIN-8. Stereo: capturar do jack de fone (3.5mm frontal) ou [fazer mod stereo interno](../../consoles/megadrive/mods.md).
+> MD1 só tem áudio mono pelo DIN-8. Stereo: capturar do jack de fone (3.5mm frontal) ou [fazer mod stereo interno](../../consoles/megadrive/).
 
 ---
 

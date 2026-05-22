@@ -91,7 +91,7 @@ Pin 5/6 (GND) ──────────────────────
 | SNES 1 original (NTSC) | ✓ (exceto 1CHIP-03) | Melhor qualidade RGB |
 | SNES 1CHIP (1 e 2) | ✓ | Melhor qualidade de imagem |
 | SNES 1CHIP-03 | ✗ | Faltam componentes; usar luma ou restaurar |
-| SNES Mini (Super Famicom Jr.) | [Requer mod](../../consoles/snes/mods.md) | csync em pin 18 do chip S-RGB |
+| SNES Mini (Super Famicom Jr.) | [Requer mod](../../consoles/snes/) | csync em pin 18 do chip S-RGB |
 | SNES PAL | Pin 3 = +12V | Cabo diferente — ver seção PAL |
 
 ---
