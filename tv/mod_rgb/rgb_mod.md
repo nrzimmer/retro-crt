@@ -379,7 +379,7 @@ Passar pelos **bordas da placa**, evitar cruzar sobre:
 
 ## Referências internas
 
-- `circuits/cboard_rgb_amp.md` — IC751, CN701, resistores de entrada R/G/B
-- `circuits/block006_av_inputs.md` — J901 pinagem, entradas AV1/SCART
-- `circuits/voltage_waveform_table.md` — IC001 pinos 85/86/87 tensões
-- `circuits/block001_processor.md` — IC001 TDA12009H visão geral
+- [`../circuits/c_board_rgb_amp.md`](../circuits/c_board_rgb_amp.md) — IC751, CN701, resistores de entrada R/G/B
+- [`../circuits/block_006_av_inputs.md`](../circuits/block_006_av_inputs.md) — J901 pinagem, entradas AV1/SCART
+- [`../circuits/voltage_waveform_table.md`](../circuits/voltage_waveform_table.md) — IC001 pinos 85/86/87 tensões
+- [`../circuits/block_001_processor.md`](../circuits/block_001_processor.md) — IC001 TDA12009H visão geral

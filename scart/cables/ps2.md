@@ -4,7 +4,7 @@
 ## Conector AV — mesmo do PS1
 
 Conector proprietário Sony 12 pinos — **idêntico ao PS1 e PSone**.  
-Pinagem igual ao PS1 (ver `ps1_scart.md`).
+Pinagem igual ao PS1 (ver [`ps1.md`](ps1.md)).
 
 ---
 

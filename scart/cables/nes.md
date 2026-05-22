@@ -2,7 +2,7 @@
 
 
 > ⚠️ NES não tem saída RGB nativa. Mod obrigatório antes de usar este cabo.  
-> Ver [`consoles/nes/mods.md`](../../consoles/nes/) para opções de mod (NESRGB, PPU-LITE).
+> Ver [`consoles/nes/README.md`](../../consoles/nes/README.md) para opções de mod (NESRGB, PPU-LITE).
 
 ---
 
