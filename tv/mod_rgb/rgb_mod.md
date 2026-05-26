@@ -153,7 +153,8 @@ Chave: rotativa 3 posições ou alavanca ON-OFF-ON (SP3T). Custo ~R$5–10.
 
 IC604 fica na PSU board (Block 003), fora do RF shield do IC001. TO-220, pino 3 = saída 5V. Solda fio direto no pino ou no capacitor de filtro de saída adjacente.
 
-Não usar CN004 pino 7 (9V) — exigiria regulador adicional.
+Não usar CN004 pino 7 (9V) para alimentar o mod board 5V — exigiria regulador adicional.  
+**Opção B (LM1203N):** CN004 pino 7 (9V) pode alimentar o LM1203N diretamente (margem reduzida) ou via módulo boost MT3608 para 12V.
 
 ### Componentes adicionais
 
@@ -170,57 +171,230 @@ Não usar CN004 pino 7 (9V) — exigiria regulador adicional.
 | DC offset | ~1.5V | ~0V | ~0.7V |
 | Swing | ~0.7Vpp | ~0.7Vpp | ~0.7Vpp |
 
-Fonte externa tem DC em 0V — precisa de cap de acoplamento + bias para chegar em ~0.7V antes do mux.
+Fonte externa tem DC em 0V e swing de ~0.35Vpp no ponto de terminação (divisor 75Ω+75Ω). Precisa de ganho ×2 + acoplamento + bias antes do mux.
 
-#### Circuito por canal (×3 para R, G, B)
+Duas opções de implementação:
+
+---
+
+### Opção A — Op-amp (TLV2374) + componentes discretos
+
+**Alimentação:** 5V do IC604. Componentes comuns, fáceis de encontrar.
+
+#### Cadeia de sinal por canal
 
 ```
-Fonte RGB                        Mod board                          CN004
-(0–0.7V, 75Ω)                                                      (IC751)
+Fonte RGB
+(0–0.7V, 75Ω)
      │
-     ├──[R_term 75Ω]── GND       ← termina linha, evita reflexão
+     ├──[R_term 75Ω]── GND               ← termina linha → ~0.35Vpp no nó
      │
-     ├──[C_couple 47µF 16V]──────── remove DC da fonte
-     │                   │
-     │             [R_top 10kΩ]── 5V    ┐
-     │                   │              ├── divisor → ~0.65V bias DC
-     │             [R_bot 1.5kΩ]─ GND  ┘
-     │                   │
-     │              [sinal AC + bias DC ~0.65V]
-     │                   │
-     └───────────────────┴──── entrada do 74HCT4053 (canal externo)
+     ├──[C_in 47µF 16V]                  ← remove DC da fonte
+     │         │
+     │    [R_a 33kΩ]── 5V  ┐
+     │         │            ├── virtual GND ~1.16V (compartilhado R/G/B)
+     │    [R_b 10kΩ]── GND ┘
+     │         │ (+ C_vgnd 10µF em paralelo com R_b)
+     │
+     [TLV2374 — não-inversor, alimentado a 5V]
+          (+) = ~1.16V + sinal AC
+          (−) conectado à saída via R_f (10kΩ) e ao GND via R_g:
+          R_g = R_gmin(5kΩ) + R_wb(trimpot 0–1kΩ) + R_contraste(0–10kΩ, seção pot 3-gang)
+          Ganho = 1 + 10k / (5k + R_wb + R_contraste)
+          Nominal (R_wb=0, R_contraste=5kΩ): ganho = 2.0 → 0.35×2 = 0.70Vpp ✓
+          DC saída = 1.16V × ganho (máx 3.48V a ganho=3 — dentro do rail 5V ✓)
+     │
+     ├──[C_out 47µF 16V]                 ← remove DC do op-amp (~1.16V×ganho)
+     │
+     ├──[R_top 10kΩ]── 5V    ┐
+     │                        ├── divisor de bias de brilho
+     ├──[R_bmin 470Ω]─┐       │
+     │         [pot_brightness 2kΩ lin]── GND
+     │                 │
+     │          bias DC ~0.22–0.99V (compartilhado R/G/B)
+     │
+     └──── entrada do 74HCT4053 (canal externo)
 
-IC001 RGB out ──────────────────────── entrada do 74HCT4053 (canal TV)
-
-74HCT4053 saída ────────────────────────────────────────────────> CN004 pin R/G/B
+IC001 RGB out ──────────── entrada do 74HCT4053 (canal TV)
+74HCT4053 saída ────────────────────────────────────────> CN004 pin R/G/B
 ```
 
-#### Cálculo do bias
+#### Contraste — ganho do op-amp
 
-Frequência de corte inferior com R=37.5Ω (fonte) e C=47µF:  
-`f_c = 1/(2π × 37.5 × 47×10⁻⁶) ≈ 90Hz` — adequado para vídeo (passa desde ~15Hz na prática com sinal real)
+`Ganho = 1 + R_f / (R_gmin + R_wb + R_contraste)`
 
-Bias: `V = 5V × 1.5kΩ / (10kΩ + 1.5kΩ) ≈ 0.65V`  
-Aceitável — IC751 opera com entrada nessa faixa. Ajustar R_bot para 1.8kΩ se quiser ~0.75V.
+| R_contraste | R_wb | Ganho | Swing saída | DC saída op-amp | Headroom (5V) |
+|-------------|------|-------|-------------|-----------------|---------------|
+| 0Ω (máx) | 0Ω | 3.00× | 1.05Vpp | 3.48V → pico 4.0V | 1.0V ✓ |
+| 5kΩ (meio) | 0Ω | 2.00× | 0.70Vpp ✓ | 2.32V → pico 2.67V | 2.33V ✓ |
+| 10kΩ (mín) | 0Ω | 1.67× | 0.58Vpp | 1.94V → pico 2.23V | 2.77V ✓ |
+| 5kΩ | 1kΩ | 1.83× | 0.64Vpp | 2.13V → pico 2.45V | 2.55V ✓ |
 
-#### Componentes por canal de vídeo (×3)
+Ponto nominal: R_contraste ≈ 5kΩ (meio do pot). White balance trim ajusta ganho ±8% por canal.
+
+> **Erro anterior corrigido:** virtual GND em 2×10kΩ (2.5V) colocaria DC de saída em 5V exatos a ganho=2 — clipping garantido. Correto é 33kΩ+10kΩ → ~1.16V.
+
+#### Brilho — bias compartilhado
+
+`V_bias = 5V × (R_bmin + pot) / (R_top + R_bmin + pot)`
+
+| pot_brightness | V_bias | Efeito |
+|----------------|--------|--------|
+| 0Ω | ~0.22V | Imagem escura, pretos esmagados |
+| ~900Ω | ~0.59V | Neutro — equivale ao IC001 nominal |
+| 2kΩ | ~0.99V | Imagem clara, pretos elevados |
+
+R_bmin=470Ω evita bias=0V. Um pot, 3 canais simultâneos — sem desvio de cor.
+
+#### Polaridade dos capacitores eletrolíticos
+
+| Cap | Polo + | Polo − | Tensão típica |
+|-----|--------|--------|---------------|
+| C_in | lado op-amp (1.16V) | lado fonte (~0V) | ~1.16V |
+| C_out | lado op-amp (2.3V–3.5V) | lado bias (0.2V–1.0V) | ~1.3V–3.3V |
+
+#### Componentes Opção A — por canal (×3)
 
 | Componente | Valor | Função |
 |-----------|-------|--------|
-| R_term | 75Ω 1/4W | Terminação 75Ω da fonte RGB |
-| C_couple | 47µF 16V eletrolítico | Acoplamento AC — remove DC da fonte |
-| C_bypass | 100nF cerâmico (opcional) | Paralelo com C_couple — melhora HF |
-| R_top | 10kΩ 1/4W | Divisor de bias (lado 5V) |
-| R_bot | 1.5kΩ 1/4W | Divisor de bias (lado GND) → bias ~0.65V |
+| R_term | 75Ω 1/4W | Terminação 75Ω da fonte |
+| C_in | 47µF 16V eletrolítico | Acoplamento — remove DC da fonte |
+| C_out | 47µF 16V eletrolítico | Acoplamento — remove DC do op-amp |
+| R_gmin | 5kΩ 1/4W | Define ganho máximo (×3 com pot=0) |
+| R_f | 10kΩ 1/4W | Resistor de realimentação |
+| R_wb | trimpot 1kΩ multivolta | White balance por canal (ajuste único) |
+| R_top | 10kΩ 1/4W | Divisor de bias, lado 5V |
+| R_bmin | 470Ω 1/4W | Bias mínimo |
 
-> **Nota polaridade C_couple:** polo negativo para a fonte (lado 0V), positivo para o bias (lado 0.65V).
-
-#### Componentes globais (×1)
+#### Componentes Opção A — globais (×1)
 
 | Componente | Valor | Função |
 |-----------|-------|--------|
-| C_bypass VCC | 100nF cerâmico | Desacoplamento VCC do 74HCT4053 próximo ao chip |
-| C_bypass VCC | 10µF eletrolítico | Bulk decoupling VCC |
+| TLV2374 ou LMV324 | DIP-14 ou SOP-14 | Quad op-amp single-supply 5V |
+| R_a virtual GND | 33kΩ 1/4W | Divisor virtual GND (lado 5V) |
+| R_b virtual GND | 10kΩ 1/4W | Divisor virtual GND (lado GND) → ~1.16V |
+| C_vgnd | 10µF 16V eletrolítico | Filtra ruído no nó virtual GND |
+| pot_brightness | 2kΩ linear | Brilho — 1 pot, 3 canais |
+| pot_contraste | 10kΩ linear 3-gang | Contraste — 3 seções, mesmo eixo |
+| C_bypass VCC 74HCT4053 | 100nF cerâmico | Desacoplamento próximo ao chip |
+| C_bypass VCC op-amp | 100nF cerâmico | Desacoplamento próximo ao TLV2374 |
+| C_bulk VCC | 10µF eletrolítico | Bulk decoupling 5V |
+
+---
+
+### Opção B — LM1203N (chip dedicado de vídeo RGB)
+
+**Chip:** National Semiconductor LM1203N, 28-pin DIP.  
+**Alimentação:** 12V (preferencial) ou 9V do CN004 pino 7 (margem reduzida).  
+Projetado especificamente para pré-amplificação RGB de monitores CRT — contraste e white balance nativos no chip.
+
+#### Arquitetura interna relevante
+
+| Função | Pinos | Método |
+|--------|-------|--------|
+| Entradas RGB | 4 (R), 6 (G), 9 (B) | Entrada diferencial com clamp |
+| Saídas RGB | 25 (R), 20 (G), 16 (B) | Corrente para driver de saída |
+| Contraste | 12 | Tensão 0V–V_ref → atenuador resistivo interno igualado |
+| Brilho (black level) | 14 (CLAMP GATE) | Pulso de blanking trava o nível de preto |
+| White balance (drive) | 27 (R), 22 (G), 18 (B) | Trimpot por canal — ajusta ganho individual |
+| White balance (cutoff) | 26 (R), 21 (G), 17 (B) | Ajusta ponto de corte de preto por canal |
+| Clamp caps | 5 (R), 8 (G), 10 (B) | Cap externo 0.1µF — segura DC de preto |
+| VREF saída | 11 | Referência interna (~1.2V) — usar para divisor de contraste |
+| VCC | 1, 13, 23, 28 | Alimentação — todos conectar ao 12V |
+| GND | 7 | Ground |
+
+#### Cadeia de sinal (Opção B)
+
+```
+Fonte RGB
+(0–0.7V, 75Ω)
+     │
+     ├──[R_term 75Ω]── GND          ← ~0.35Vpp após terminação
+     │
+     ├──[C_in 100nF film]            ← acoplamento AC (chip espera sinal sem DC)
+     │
+     [LM1203N pino R/G/B in]
+          Ganho interno ajustado pelos pinos DRIVE (trimpots)
+          Contraste via pino 12 (0V = mín, VREF = máx)
+          Brilho via CLAMP GATE (pino 14) + CSYNC
+     │
+     [LM1203N pinos R/G/B out → 25/20/16]
+     │
+     ├──[R_out 1kΩ]                  ← adapta saída de corrente para tensão
+     │
+     └──── entrada do 74HCT4053 (canal externo)
+```
+
+> **Nota nível de saída:** LM1203N saída é corrente. Com 1kΩ de carga → tensão. Ajustar R_out ou trimpot DRIVE para obter ~0.7Vpp na entrada do 74HCT4053. Verificar com osciloscópio na primeira calibração.
+
+#### Contraste (Opção B)
+
+Pino 12 (CONTRAST): tensão de 0V (mínimo contraste) até V_ref/pino 11 (máximo).  
+Pot simples de 10kΩ entre GND e VREF (pino 11), wiper no pino 12.  
+**Um pot, 3 canais igualmente — atenuadores internos são igualados pelo fabricante.**
+
+#### Brilho (Opção B)
+
+CLAMP GATE (pino 14) requer pulso de blanking para travar o nível de preto.  
+Conectar ao sinal de blanking do console (SCART pino 16 / FB) ou ao CSYNC via circuito de detecção.  
+Sem esse pulso: brilho fixo no valor de inicialização dos caps de clamp (funciona mas sem controle dinâmico).
+
+Alternativa simples sem blanking: deixar pino 14 em 5V fixo (clampa continuamente) — funciona mas pode introduzir distorção no preto em alguns sinais.
+
+#### White balance (Opção B)
+
+- Pinos DRIVE (27/22/18): trimpot de 1kΩ por canal entre GND e VCC — ajusta ganho
+- Pinos CLAMP− (26/21/17): trimpot de 1kΩ por canal — ajusta ponto de corte de preto
+
+Calibração em duas etapas: primeiro DRIVE (ajusta branco), depois CLAMP− (ajusta preto).
+
+#### Alimentação Opção B
+
+| Opção | Tensão | Como obter | Observação |
+|-------|--------|-----------|------------|
+| Ideal | 12V | Rail 12V interno da TV (verificar no PSU board) | Headroom máximo |
+| Aceitável | 9V | CN004 pino 7 | Headroom reduzido, testar estabilidade |
+| Alternativa | 12V boost | Módulo boost MT3608 a partir do 9V | ~R$5, simples |
+
+Não usar 5V do IC604 — tensão insuficiente para LM1203N.
+
+#### Componentes Opção B — por canal (×3)
+
+| Componente | Valor | Função |
+|-----------|-------|--------|
+| R_term | 75Ω 1/4W | Terminação 75Ω da fonte |
+| C_in | 100nF film (MKT/MKP) | Acoplamento AC — film preferível a eletrolítico em HF |
+| C_clamp | 100nF film | Clamp cap por canal (pinos 5/8/10) |
+| R_out | 1kΩ 1/4W | Converte saída de corrente em tensão |
+| trimpot DRIVE | 1kΩ multivolta | White balance ganho por canal |
+| trimpot CUTOFF | 1kΩ multivolta | White balance corte de preto por canal |
+
+#### Componentes Opção B — globais (×1)
+
+| Componente | Valor | Função |
+|-----------|-------|--------|
+| LM1203N | DIP-28 | Chip pré-amp RGB dedicado |
+| pot_contraste | 10kΩ linear | Contraste — 1 pot, 3 canais (atenuador interno) |
+| Fonte 12V (se necessário) | MT3608 ou rail TV | Alimentação do LM1203N |
+| C_bypass VCC | 100nF cerâmico ×4 | Bypass em cada pino VCC (1, 13, 23, 28) |
+| C_bulk VCC | 10µF eletrolítico | Bulk decoupling 12V |
+
+> **Brilho na Opção B:** controlado pelo circuito de clamp — não há pot externo de brilho como na Opção A. O brilho ajusta-se automaticamente pelo nível de preto do sinal se CLAMP GATE estiver conectado ao blanking. Se precisar de ajuste manual, interpor trimpot no VREF (pino 11).
+
+---
+
+#### Comparativo das opções
+
+| Critério | Opção A (TLV2374) | Opção B (LM1203N) |
+|----------|-------------------|-------------------|
+| Tensão supply | 5V (já disponível) | 12V (pode precisar de boost) |
+| Disponibilidade | Alta — op-amp genérico | Média — chip legacy, achar em estoque |
+| Complexidade | Média | Maior (28 pinos, clamp, blanking) |
+| Contraste | Pot 3-gang (3 seções) | Pot simples (atenuador interno) |
+| Brilho | Pot externo direto | Clamp automático ou VREF trimpot |
+| White balance | 3 trimpots (ganho) | 6 trimpots (ganho + cutoff por canal) |
+| Qualidade de sinal | Boa (op-amp genérico) | Melhor (igualamento interno, projetado p/ vídeo) |
+| **Recomendação** | Primeira opção — menor risco | Se achar o chip e quiser qualidade extra |
 
 ---
 
@@ -326,17 +500,55 @@ Adiciona ~1 frame de latência. Permite qualquer console independente de resolu�
 
 ## Lista de materiais
 
+### Chaveamento e controle
+
 | Componente | Qtd | Observação |
 |-----------|-----|------------|
-| 74HCT4053 (DIP ou SMD) | 1x | Mux analógico 3× 2:1 |
-| Resistor 75Ω 1/4W | 3x | Terminação RGB |
-| Capacitor eletrolítico 100µF 16V | 3x | Acoplamento AC |
-| Resistor bias ~1kΩ 1/4W | 3x | Bias para IC751 |
-| Resistor bias ~680Ω 1/4W | 3x | Divisor de bias |
-| Conector compatível CN004/CN701 | 1x | Verificar passo e tipo in situ |
+| 74HCT4053 (DIP ou SMD) | 1× | Mux analógico 3× 2:1 |
+| Transistor NPN BC547 ou 2N2222 | 1× | Driver FB |
+| Resistor 10kΩ 1/4W | 2× | Base (R1) e pull-down (R2) do transistor FB |
+| Chave SP3T (3 posições) | 1× | AUTO / RGB / TV |
+
+### Ganho e controles de imagem — Opção A (TLV2374)
+
+| Componente | Qtd | Observação |
+|-----------|-----|------------|
+| TLV2374 ou LMV324 (quad op-amp) | 1× | Single-supply 5V, DIP-14 ou SOP-14 |
+| Resistor 75Ω 1/4W | 3× | R_term — terminação RGB por canal |
+| Resistor 5kΩ 1/4W | 3× | R_gmin — ganho mínimo por canal |
+| Resistor 10kΩ 1/4W | 3× | R_f — realimentação por canal |
+| Resistor 33kΩ 1/4W | 1× | R_a virtual GND (lado 5V) |
+| Resistor 10kΩ 1/4W | 1× | R_b virtual GND (lado GND) → ~1.16V |
+| Resistor 10kΩ 1/4W | 3× | R_top bias brilho por canal |
+| Resistor 470Ω 1/4W | 1× | R_bmin — bias mínimo brilho |
+| Capacitor eletrolítico 47µF 16V | 6× | C_in + C_out por canal (polo + para lado de maior tensão) |
+| Capacitor eletrolítico 10µF 16V | 2× | C_vgnd (virtual GND) + bulk VCC |
+| Capacitor cerâmico 100nF | 2× | Bypass VCC 74HCT4053 + TLV2374 |
+| Trimpot 1kΩ multivolta | 3× | White balance R, G, B |
+| Pot linear 2kΩ | 1× | Brilho |
+| Pot linear 10kΩ 3-gang | 1× | Contraste — 3 seções, mesmo eixo |
+
+### Ganho e controles de imagem — Opção B (LM1203N)
+
+| Componente | Qtd | Observação |
+|-----------|-----|------------|
+| LM1203N | 1× | DIP-28 — verificar disponibilidade antes de escolher esta opção |
+| Resistor 75Ω 1/4W | 3× | R_term — terminação RGB por canal |
+| Resistor 1kΩ 1/4W | 3× | R_out — converte saída corrente em tensão |
+| Capacitor film 100nF (MKT) | 6× | C_in (×3) + C_clamp (×3) por canal |
+| Capacitor cerâmico 100nF | 5× | Bypass VCC pinos 1, 13, 23, 28 + 74HCT4053 |
+| Capacitor eletrolítico 10µF | 1× | Bulk VCC 12V |
+| Trimpot 1kΩ multivolta | 6× | White balance: DRIVE ×3 + CUTOFF ×3 |
+| Pot linear 10kΩ | 1× | Contraste (wiper no pino 12, entre GND e VREF pino 11) |
+| Fonte 12V | 1× | Rail 12V interno da TV ou módulo boost MT3608 do 9V |
+
+### Conectores e cabeamento
+
+| Componente | Qtd | Observação |
+|-----------|-----|------------|
+| Conector compatível CN004/CN701 | 1× | Verificar passo e tipo in situ |
 | Cabo fino blindado (tipo áudio) | — | Sync + áudio AV2 — pode ser longo |
 | Cabo fino simples (flat ou 0.1mm) | — | RGB interno (curto, mod board ao lado do CN004) |
-| Chave ou transistor de controle | 1x | Para pino S do 74HCT4053 |
 
 ---
 
@@ -374,6 +586,46 @@ Passar pelos **bordas da placa**, evitar cruzar sobre:
        |
     [CN004]
 ```
+
+---
+
+## Alternativa sem mod — conversor RGB→YPbPr + J901
+
+**Confirmado:** IC001 aceita 240p/15kHz na entrada componente J901. Testado com PS1 (FF8 — troca 240p↔480i em tempo real durante o jogo).
+
+Isso abre uma alternativa sem abrir a TV: usar conversor RGB→YPbPr analógico + J901.
+
+### Requisito crítico: conversor sem upscaling
+
+Conversores com scaler interno (ex: BITFUNX B0FSKMJGXK) convertem 240p→480i internamente — **não servem**. Precisar de conversor de **matriz analógica pura** que só faz conversão de espaço de cor, sem frame buffer.
+
+### Opções confirmadas para 240p nativo
+
+| Produto | Método | 240p | Preço aprox. | Onde |
+|---------|--------|------|--------------|------|
+| **RetroTINK RGB2COMP** | Matriz analógica | ✅ confirmado | ~$45 USD | retrotink.com |
+| **Genérico AliExpress** (LM1881 + BA7230LS) | Matriz analógica | ✅ confirmado com osciloscópio | ~$20 USD | AliExpress |
+| **DIY op-amp** | Summing amps + resistores 1% | ✅ (sem frame buffer por definição) | ~$5–10 | componentes |
+
+O genérico do AliExpress usa **LM1881** (separador de sync) + **BA7230LS** (encoder YPbPr) — revisão externa confirmou ausência de conversão de resolução.
+
+### Comparativo com RGB mod direto
+
+| Critério | Conversor + J901 | RGB mod (CN004) |
+|----------|-----------------|-----------------|
+| Mod na TV | Nenhum | Sim |
+| 240p | ✅ | ✅ |
+| 480i / 480p | ✅ | ✅ / ❌ (31kHz não passa) |
+| Qualidade | Boa (RGB→YPbPr→IC001→RGB) | Melhor (sinal direto) |
+| Brilho/contraste | Knobs no adaptador | Pots externos no mod |
+| Custo | $20–45 adaptador | $15–25 componentes |
+| Reversível | Trivial | Sim (CN004 é conector) |
+| AV1 + componente livres | AV1 livre, componente ocupado | Componente + AV1 livres |
+
+### Quando usar cada um
+
+- **Conversor + J901:** uso imediato sem modificação, consoles com SCART RGB, qualidade suficiente para uso casual
+- **RGB mod CN004:** melhor qualidade de imagem, libera J901 para outros dispositivos, vale a pena para uso permanente
 
 ---
 
