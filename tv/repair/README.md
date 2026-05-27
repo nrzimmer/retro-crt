@@ -1,7 +1,7 @@
 # Lista de Componentes — Reparo Pincushion KV-21FS140
 
-**Sintoma:** Efeito pincushion crescente após aquecimento, com spikes de largura correta intermitentes.
-**Causa provável:** Capacitores eletrolíticos secos (alto ESR) no circuito EW — Block 004.
+**Sintoma:** Bordas curvadas para dentro, com spikes de largura normal intermitentes. Aparece em poucos segundos após ligar.
+**Causa provável:** Componente ativo instável no circuito EW — C857/C861/C867 trocados sem resolver.
 
 ---
 
@@ -13,9 +13,9 @@ Trocar primeiro. Se resolver, não precisa continuar.
 
 | Componente a comprar | Qtd | Ref na placa | Valor original | Local no circuito |
 |---|---|---|---|---|
-| 220µF 25V 105°C electrolytic | 3x | C857, C861 (+ 1 reserva) | 220µF 25V | Reservatório EW — causa principal |
-| 33µF 160V 105°C electrolytic | 2x | C867 (+ 1 reserva) | 33µF 160V | Ressonância H — scan width instável |
-| 2.2µF 35V 105°C electrolytic | 2x | C854 (+ 1 reserva) | 2.2µF 35V | Bootstrap vertical IC804 |
+| ~~220µF 25V 105°C electrolytic~~ | ~~3x~~ | ~~C857, C861~~ | ~~220µF 25V~~ | ~~Trocados — não resolveu~~ |
+| ~~33µF 160V 105°C electrolytic~~ | ~~2x~~ | ~~C867~~ | ~~33µF 160V~~ | ~~Trocado — não resolveu~~ |
+| 100µF 35V 105°C electrolytic | 2x | C854 (+ 1 reserva) | 100µF 35V | Bootstrap vertical IC804 |
 
 > **Atenção:** usar obrigatoriamente capacitores **105°C**. Não usar 85°C — área quente, falharão novamente rápido.
 > C867: tensão mínima 160V — não substituir por tensão menor.
@@ -28,7 +28,8 @@ Se etapa 1 não resolver completamente.
 
 | Componente a comprar | Qtd | Ref na placa | Valor original | Função |
 |---|---|---|---|---|
-| 2SC1815 ou BC547 (NPN) | 3x | Q806, Q809, Q810 | 2SC1623-L5L6 | MIXER EW e auxiliares |
+| 2SC1815 ou BC547 (NPN) | 2x | Q806, Q814 | 2SC1623-L5L6 | MIXER EW e auxiliares |
+| KTA1279 (PNP) | 1x | Q809 | KTA1279 | Auxiliar EW (PNP — substituto diferente de Q806!) |
 | 2SC3209LK | 2x | Q803, Q810 | 2SC3209LK | PIN AMP / H-DRIVE (original preferível) |
 | JRC4558 ou NE5532 DIP-8 | 1x | IC802 | TJM4558CDT | Dual op-amp — processa sinal EWD |
 | IRF614 | 1x | Q808 | IRF614-037 | S-CORRECTION MOSFET (difícil achar — pedir junto) |
@@ -36,8 +37,9 @@ Se etapa 1 não resolver completamente.
 > **Atenção pinout transistores japoneses:** 2SC1623 e 2SC1815 têm pinagem diferente de BC547 europeu.
 > Confirmar EBC antes de soldar. Medir com multímetro no modo diodo antes de instalar.
 >
+> **Q809 é PNP (KTA1279)** — NÃO substituir com 2SC1815/BC547.
+>
 > **Q803 (PIN AMP):** opera em tensões mais altas. Preferir 2SC3209LK original ou equivalente de mesma classe.
-> BC547 serve apenas para Q806, Q809, Q810.
 
 ---
 
@@ -47,10 +49,11 @@ Se etapa 1 e 2 não resolverem.
 
 | Componente a comprar | Qtd | Ref na placa | Valor original | Função |
 |---|---|---|---|---|
-| UF4007 (fast recovery 1A 1000V) | 10x | D818, D819, D821, D823, D824, D827 (+ reservas) | 10ERB20-TB3 / PG104R | Retificadores e referências EW |
+| UF4007 (fast recovery 1A 1000V) | 9x | D819, D821, D823, D824, D827 (+ reservas) | 10ERB20-TB3 / PG104R | Retificadores fast recovery EW |
+| RD5.1ESB2 (Zener 5.1V) | 1x | D818 | RD5.1ESB2 | Referência Zener — NÃO substituir com UF4007 |
 
-> UF4007 substitui todos os fast recovery do circuito EW.
-> Comprar pacote de 10 — barato e cobre todos com reserva.
+> UF4007 substitui apenas os fast recovery (10ERB20 / PG104R).
+> D818 é Zener 5.1V — componente diferente, substituto diferente.
 
 ---
 
@@ -61,8 +64,8 @@ Verificar visualmente antes de pedir. Trocar se houver sinal de queima ou se med
 | Componente a comprar | Qtd | Ref na placa | Valor | Função |
 |---|---|---|---|---|
 | 0.47Ω 1/2W | 2x | R400, R401 | 0.47Ω | Sensing corrente yoke H — fusíveis |
-| 100Ω 1/2W | 1x | R891 | 100Ω | Fusível saída vertical IC804 |
-| 2.2Ω 1/2W | 1x | R895 | 2.2Ω | Sensing corrente vertical — fusível |
+| 2.2Ω 1/4W | 1x | R891 | 2.2Ω | Fusível saída vertical IC804 |
+| 3.3kΩ 1/10W | 1x | R895 | 3.3kΩ | Sensing corrente vertical |
 | 47kΩ 1/4W | 1x | R888 | 47k | Divisor sinal EW |
 
 ---
@@ -73,24 +76,26 @@ Verificar visualmente antes de pedir. Trocar se houver sinal de queima ou se med
 CAPACITORES:
   3x  220µF 25V 105°C electrolytic
   2x  33µF 160V 105°C electrolytic
-  2x  2.2µF 35V 105°C electrolytic
+  2x  100µF 35V 105°C electrolytic
 
 TRANSISTORES:
-  3x  2SC1815 ou BC547
-  2x  2SC3209LK
-  1x  IRF614
+  2x  2SC1815 ou BC547 (NPN) — Q806, Q814
+  1x  KTA1279 (PNP) — Q809
+  2x  2SC3209LK — Q803, Q810
+  1x  IRF614 — Q808
 
 OP-AMP:
-  1x  JRC4558 ou NE5532 DIP-8
+  1x  JRC4558 ou NE5532 DIP-8 — IC802
 
 DIODOS:
-  10x UF4007
+  9x  UF4007 (fast recovery) — D819, D821, D823, D824, D827
+  1x  RD5.1ESB2 (Zener 5.1V) — D818
 
 RESISTORES:
-  2x  0.47Ω 1/2W
-  1x  100Ω 1/2W
-  1x  2.2Ω 1/2W
-  1x  47kΩ 1/4W
+  2x  0.47Ω 1/2W — R400, R401
+  1x  2.2Ω 1/4W — R891
+  1x  3.3kΩ 1/10W — R895
+  1x  47kΩ 1/4W — R888
 ```
 
 ---
